@@ -19,7 +19,7 @@ export default function Footer() {
     return (
         <footer className="bg-black text-white font-poppins">
             {/* Main Footer Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
                 {/* Grid Layout */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-16 mb-12">
@@ -36,18 +36,6 @@ export default function Footer() {
 
                         <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6 text-center sm:text-left">
                             Improve your triathlon performance with personalized training plans guided by an experienced coach committed to your success.
-                        </p>
-
-                        <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
-                            Powered by{" "}
-                            <a
-                                href="https://www.ansely.co.uk"  // Replace with the actual website URL
-                                target="_blank"               // Opens in a new tab
-                                rel="noopener noreferrer"     // Security and privacy best practices
-                                className="text-white font-semibold hover:text-blue-400 transition-colors cursor-pointer"
-                            >
-                                Ansely
-                            </a>
                         </p>
                     </div>
 
@@ -94,6 +82,42 @@ export default function Footer() {
 
                 {/* Divider */}
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-8"></div>
+                <div className="text-center text-gray-400">
+                    <p>&copy; 2025 PPS Group. All rights reserved.</p>
+                </div>
+
+                {/* Bottom Bar */}
+                <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
+                    {/* Left: Terms & Privacy */}
+                    <div className="flex gap-4 text-sm">
+                        <a
+                            href="/terms"
+                            className="text-gray-400 hover:text-[#0094D9] transition duration-300"
+                        >
+                            Terms & Conditions
+                        </a>
+                        <span className="text-gray-500">|</span>
+                        <a
+                            href="/privacy"
+                            className="text-gray-400 hover:text-[#0094D9] transition duration-300"
+                        >
+                            Privacy Policy
+                        </a>
+                    </div>
+
+                    {/* Center: Powered by Ansely (unchanged) */}
+                    <p className="text-center font-semibold text-gray-400">
+                        Powered by{" "}
+                        <a
+                            href="https://www.ansely.co.uk/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-[#0094D9] hover:underline"
+                        >
+                            Ansely
+                        </a>
+                    </p>
+                </div>
             </div>
 
         </footer>
