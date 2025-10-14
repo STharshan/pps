@@ -53,7 +53,7 @@ export default function TestimonialsSection() {
         >
           <h2 className="uppercase font-semibold text-[#0094D9] mb-3">• What Our Clients Say</h2>
           <h3 className="text-3xl sm:text-4xl font-bold mb-4">TRUSTED BY MANY, LOVED BY ALL</h3>
-          <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">
+          <p className="text-lg sm:text-xl text-gray-600 ">
             Our clients' success stories reflect our commitment to excellence. See how we've helped them find their dream homes, sustainable investments, and perfect getaways.
           </p>
         </div>
@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
           className="w-full lg:w-1/2 relative"
           data-aos="fade-left" // Add AOS animation to right side
         >
-          <div className="relative bg-white dark:bg-black text-gray-900 dark:text-white rounded-2xl shadow-2xl p-6 sm:p-10 hover:shadow-[#0094D9] active:shadow-[#0094D9] cursor-pointer">
+          <div className="relative bg-white text-gray-900  rounded-2xl shadow-2xl p-6 sm:p-10 hover:shadow-[#0094D9] active:shadow-[#0094D9] cursor-pointer">
             {/* Quote mark inside card */}
             <div className="absolute top-4 right-4 text-red-500/30 text-6xl font-serif select-none">
               &rdquo;
@@ -77,18 +77,18 @@ export default function TestimonialsSection() {
             </div>
 
             {/* Title */}
-            <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900 dark:text-white">
+            <h3 className="text-lg sm:text-xl font-bold mb-3 text-gray-900 ">
               {testimonial.title}
             </h3>
 
             {/* Text */}
-            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">{testimonial.text}</p>
+            <p className="text-gray-600  mb-6 leading-relaxed">{testimonial.text}</p>
 
             {/* Profile */}
-            <div className="flex items-center gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+            <div className="flex items-center gap-4 pt-4 border-t border-gray-200 ">
               <div>
-                <p className="font-semibold text-gray-900 dark:text-white">{testimonial.name}</p>
-                <p className="text-gray-500 dark:text-gray-400 text-sm">{testimonial.role}</p>
+                <p className="font-semibold text-gray-900 ">{testimonial.name}</p>
+                <p className="text-gray-500  text-sm">{testimonial.role}</p>
               </div>
             </div>
           </div>
