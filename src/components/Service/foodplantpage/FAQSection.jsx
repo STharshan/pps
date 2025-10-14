@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
-export default function FAQSection() {
+export default function ComFAQSection() {
   // 🔹 FAQ Data
   const faqs = [
     {
@@ -43,7 +43,7 @@ export default function FAQSection() {
       <div className="max-w-4xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#1C3B45] dark:text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-[#0094D9] dark:text-white mb-6">
             Frequently Asked Questions
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 leading-relaxed">
