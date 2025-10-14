@@ -13,7 +13,7 @@ export default function HeroSection() {
       {/* Background video or image */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover"
-        src="https://videos.pexels.com/video-files/856193/856193-hd_1920_1080_25fps.mp4"
+        src="/video.mp4"
         autoPlay
         loop
         muted
