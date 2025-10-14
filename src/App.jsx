@@ -1,31 +1,18 @@
-import AboutSection from "./components/About"
-import ContactSection from "./components/Contact"
-import CivitasFAQ from "./components/FAQ"
-import Footer from "./components/Footer"
-import HeroSection from "./components/Header"
-import Navbar from "./components/Navbar"
-import PartnersCarousel from "./components/Partner"
-import ServicesSection from "./components/Services"
-import TestimonialsSection from "./components/Testimonail"
-import WhyChooseUs from "./components/WhyChooseUs"
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
 
 function App() {
-
   return (
-    <>
+    <Router>
       <Navbar />
-      <HeroSection />
-      <PartnersCarousel />
-      <AboutSection />
-      <WhyChooseUs />
-      <ServicesSection />
-      <TestimonialsSection />
-      <CivitasFAQ />
-      <ContactSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
-    </>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;

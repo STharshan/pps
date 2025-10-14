@@ -48,7 +48,7 @@ export default function ContactSection() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="lg:w-1/2 bg-[#101010] rounded-xl shadow-lg p-8" data-aos="fade-left">
+                <div className="lg:w-1/2 md:w-full bg-[#101010] rounded-xl shadow-lg p-8" data-aos="fade-left">
                     <form className="space-y-6">
                         <div>
                             <label htmlFor="name" className="block text-lg">
