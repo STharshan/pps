@@ -1,12 +1,12 @@
 import React from 'react'
-import AboutSection from "../components/About"
-import ContactSection from "../components/Contact"
-import CivitasFAQ from "../components/FAQ"
-import HeroSection from "../components/Header"
-import PartnersCarousel from "../components/Partner"
-import ServicesSection from "../components/Services"
-import TestimonialsSection from "../components/Testimonail"
-import WhyChooseUs from "../components/WhyChooseUs"
+import AboutSection from "../components/Home/About"
+import ContactSection from "../components/Home/Contact"
+import CivitasFAQ from "../components/Home/FAQ"
+import HeroSection from "../components/Home/Header"
+import PartnersCarousel from "../components/Home/Partner"
+import ServicesSection from "../components/Home/Services"
+import TestimonialsSection from "../components/Home/Testimonail"
+import WhyChooseUs from "../components/Home/WhyChooseUs"
 
 const Home = () => {
   return (

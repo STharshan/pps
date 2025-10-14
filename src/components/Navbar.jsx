@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
+import { HashLink as Link } from "react-router-hash-link"; // Import HashLink
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false); // Track scroll state
+  const [isScrolled, setIsScrolled] = useState(false);
 
-  // Detect scroll and change background color of navbar
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) { // Change to the scroll position you prefer
+      if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
         setIsScrolled(false);
@@ -16,8 +16,6 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    
-    // Cleanup the event listener when component unmounts
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -30,74 +28,100 @@ export default function Navbar() {
       } backdrop-blur-sm`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
-        {/* Logo Image */}
         <a href="#home" className="flex items-center">
           <img
-            src="/logo.png" // 👈 Replace this with your actual logo path
+            src="/logo.png"
             alt="ARCON Logo"
-            className="h-10 w-auto object-contain" // responsive sizing
+            className="h-10 w-auto object-contain"
           />
         </a>
 
-        {/* Centered Nav Links */}
         <nav className="hidden lg:flex space-x-10 text-black font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2">
-          <a href="#home" className="hover:text-[#0094D9] transition">Home</a>
-          <a href="#about" className="hover:text-[#0094D9] transition">About</a>
-          <a href="#services" className="hover:text-[#0094D9] transition">Services</a>
-          <a href="#testimonials" className="hover:text-[#0094D9] transition">Client</a>
-          <a href="#contact" className="hover:text-[#0094D9] transition">Contact</a>
+          <Link
+            to="/#home"
+            className="hover:text-[#0094D9] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Home
+          </Link>
+          <Link
+            to="/#about"
+            className="hover:text-[#0094D9] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            About
+          </Link>
+          <Link
+            to="/#services"
+            className="hover:text-[#0094D9] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Services
+          </Link>
+          <Link
+            to="/#testimonials"
+            className="hover:text-[#0094D9] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Client
+          </Link>
+          <Link
+            to="/#contact"
+            className="hover:text-[#0094D9] transition"
+            onClick={() => setIsOpen(false)}
+          >
+            Contact
+          </Link>
         </nav>
 
-        {/* Hamburger Icon (Mobile) */}
         <div
           className="lg:hidden text-white text-3xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FiX className="text-black hover:text-[#0094D9] active:text-[#0094D9]" /> : <FiMenu className="text-black hover:text-[#0094D9] active:text-[#0094D9]" />}
+          {isOpen ? <FiX className="text-black" /> : <FiMenu className="text-black" />}
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <div
         className={`lg:hidden fixed top-0 left-0 p-3 mt-20 w-full bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white text-xl font-semibold uppercase tracking-wider transition-transform duration-300 ${
           isOpen ? "translate-x-0 max-h-[80vh] overflow-y-auto" : "-translate-x-full"
         }`}
       >
-        <a
-          href="#home"
-          className="hover:text-[#0094D9] active:text-[#0094D9]"
+        <Link
+          to="/#home"
+          className="hover:text-[#0094D9] transition"
           onClick={() => setIsOpen(false)}
         >
           Home
-        </a>
-        <a
-          href="#about"
-          className="hover:text-[#0094D9] active:text-[#0094D9]"
+        </Link>
+        <Link
+          to="/#about"
+          className="hover:text-[#0094D9] transition"
           onClick={() => setIsOpen(false)}
         >
           About
-        </a>
-        <a
-          href="#services"
-          className="hover:text-[#0094D9] active:text-[#0094D9]"
+        </Link>
+        <Link
+          to="/#services"
+          className="hover:text-[#0094D9] transition"
           onClick={() => setIsOpen(false)}
         >
           Services
-        </a>
-        <a
-          href="#testimonials"
-          className="hover:text-[#0094D9] active:text-[#0094D9]"
+        </Link>
+        <Link
+          to="/#testimonials"
+          className="hover:text-[#0094D9] transition"
           onClick={() => setIsOpen(false)}
         >
           Client
-        </a>
-        <a
-          href="#contact"
-          className="hover:text-[#0094D9] active:text-[#0094D9]"
+        </Link>
+        <Link
+          to="/#contact"
+          className="hover:text-[#0094D9] transition"
           onClick={() => setIsOpen(false)}
         >
           Contact
-        </a>
+        </Link>
       </div>
     </header>
   );

@@ -41,7 +41,7 @@ export default function CivitasFAQ() {
   return (
     <div className="bg-gradient-to-br from-slate-50 via-white to-blue-50 font-poppins" id="faq">
       {/* Main Container */}
-      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           {/* Left Section */}
           <div className="flex flex-col justify-start lg:sticky lg:top-20" data-aos="fade-right">

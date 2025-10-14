@@ -1,14 +1,16 @@
 "use client";
 import React from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import { Link } from "react-router-dom"; // Import Link for smooth scrolling
+import { HashLink } from "react-router-hash-link";
 
 export default function Footer() {
   const sections = [
-    { title: "Home", href: "#home" },
-    { title: "About", href: "#about" },
-    { title: "Services", href: "#services" },
-    { title: "Client", href: "#testimonials" },
-    { title: "Contact", href: "#contact" },
+    { title: "Home", href: "/#home" },
+    { title: "About", href: "/#about" },
+    { title: "Services", href: "/#services" },
+    { title: "Client", href: "/#testimonials" },
+    { title: "Contact", href: "/#contact" },
   ];
 
   const socials = [
@@ -40,12 +42,12 @@ export default function Footer() {
           <ul className="flex flex-col space-y-2">
             {sections.map((item, i) => (
               <li key={i}>
-                <a
-                  href={item.href}
+                <HashLink
+                  to={item.href} // Use Link for smooth scrolling
                   className="transition-colors hover:text-[#36afe7] duration-200"
                 >
                   {item.title}
-                </a>
+                </HashLink>
               </li>
             ))}
           </ul>
@@ -78,13 +80,13 @@ export default function Footer() {
         <p>© 2025 PPS Group. All rights reserved.</p>
         <div className="flex items-center gap-5">
           <a
-            href="#"
+            href="/terms-conditions"
             className="hover:text-white transition-colors duration-200"
           >
             Terms & Conditions
           </a>
           <a
-            href="#"
+            href="/privacy-policy"
             className="hover:text-white transition-colors duration-200"
           >
             Privacy Policy

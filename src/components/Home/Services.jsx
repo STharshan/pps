@@ -82,7 +82,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50 py-16 px-4 sm:px-6 lg:px-8 font-poppins scroll-m-10"
+      className="bg-gradient-to-br from-slate-50 via-white to-slate-50 py-16 px-4 sm:px-6 lg:px-8 font-poppins scroll-m-10"
     >
       {/* Header Section */}
       <div className="max-w-6xl mx-auto mb-16">
