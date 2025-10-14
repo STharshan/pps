@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import GDPRConsent from './components/GDPRButton';
 import TermsConditions from './components/Term';
 import PrivacyPolicy from './components/PrivacyPolicy';
-
+import Foodplante from "../src/pages/Foodplante"
 function App() {
   return (
     <Router>
@@ -14,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/Foodplante" element={<Foodplante />} />
       </Routes>
       <Footer />
       <GDPRConsent />
