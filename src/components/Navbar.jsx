@@ -1,0 +1,74 @@
+import React, { useState, useEffect } from "react";
+import { FiMenu, FiX } from "react-icons/fi";
+
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false); // Track scroll state
+
+  // Detect scroll and change background color of navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) { // Change to the scroll position you prefer
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    // Cleanup the event listener when component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <header
+      className={`fixed top-0 left-0 w-full font-poppins z-30 transition-all duration-300 ${
+        isScrolled ? "bg-black" : "bg-transparent"
+      } backdrop-blur-sm`}
+    >
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        {/* Logo Image */}
+        <a href="#home" className="flex items-center">
+          <img
+            src="/logo.png" // 👈 Replace this with your actual logo path
+            alt="ARCON Logo"
+            className="h-10 w-auto object-contain" // responsive sizing
+          />
+        </a>
+
+        {/* Centered Nav Links */}
+        <nav className="hidden md:flex space-x-10 text-white font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2">
+          <a href="#home" className="hover:text-[#0094D9] transition">Home</a>
+          <a href="#about" className="hover:text-[#0094D9] transition">About</a>
+          <a href="#services" className="hover:text-[#0094D9] transition">Services</a>
+          <a href="#testimonials" className="hover:text-[#0094D9] transition">Client</a>
+          <a href="#contact" className="hover:text-[#0094D9] transition">Contact</a>
+        </nav>
+
+        {/* Hamburger Icon (Mobile) */}
+        <div
+          className="md:hidden text-white text-3xl cursor-pointer"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          {isOpen ? <FiX /> : <FiMenu />}
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden fixed top-0 left-0 h-screen w-full bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white text-xl font-semibold uppercase tracking-wider transition-transform duration-300 ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <a href="#home" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Home</a>
+        <a href="#about" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>About</a>
+        <a href="#services" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Services</a>
+        <a href="#testimonials" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Client</a>
+        <a href="#contact" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Contact</a>
+      </div>
+    </header>
+  );
+}
