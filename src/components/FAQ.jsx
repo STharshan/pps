@@ -35,13 +35,11 @@ export default function CivitasFAQ() {
           
           {/* Left Section */}
           <div className="flex flex-col justify-start lg:sticky lg:top-20">
-            <div className="mb-6">
-              <span className="inline-block text-black text-sm font-semibold tracking-wide bg-[#a2dcf7] px-3 py-1 rounded-full">
+              <span className="inline-block text-[#0094D9] font-semibold tracking-wide">
                 • FAQ
               </span>
-            </div>
             
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold text-[#0094D9] mb-8 leading-tight">
+            <h1 className="text-4xl mt-5 font-serif font-bold text-black mb-8 leading-tight">
               Your questions, answered effortlessly with us
             </h1>
             

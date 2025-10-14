@@ -11,7 +11,7 @@ export default function Footer() {
     ];
 
     const socials = [
-        { name: 'Facebook', icon: Facebook , href: 'https://www.facebook.com/ppsgroupinc/' },
+        { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/ppsgroupinc/' },
         { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/ppsgroupinc/' },
         { name: 'Twitter', icon: Twitter, href: 'https://x.com/ppsgroupinc/' }
     ];
@@ -26,19 +26,20 @@ export default function Footer() {
 
                     {/* Left Section - Brand Info */}
                     <div className="col-span-1">
-                        <div className="flex items-center gap-3 mb-6">
-                            <div className="bg-white text-black rounded-full p-2">
-                                <Activity className="w-6 h-6" />
-                            </div>
-                            <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">PPS Group</h2>
+                        <div className="text-black mb-6">
+                            <img
+                                src="/logo.png" // Replace with your logo image path
+                                alt="PPS Group Logo"
+                                className="w-40 h-auto object-contain mx-auto" // Increased size and centered
+                            />
                         </div>
 
-                        <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6">
+                        <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6 text-center sm:text-left">
                             Improve your triathlon performance with personalized training plans guided by an experienced coach committed to your success.
                         </p>
 
-                        <p className="text-gray-500 text-xs sm:text-sm">
-                            Created by{" "}
+                        <p className="text-gray-500 text-xs sm:text-sm text-center sm:text-left">
+                            Powered by{" "}
                             <a
                                 href="https://www.ansely.co.uk"  // Replace with the actual website URL
                                 target="_blank"               // Opens in a new tab
@@ -94,7 +95,6 @@ export default function Footer() {
                 {/* Divider */}
                 <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-8"></div>
             </div>
-
 
         </footer>
     );

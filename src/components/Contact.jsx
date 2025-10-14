@@ -1,5 +1,6 @@
 import React from "react";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; // Import the icons
+import { FiPhone } from "react-icons/fi";
 
 export default function ContactSection() {
     return (
@@ -16,7 +17,7 @@ export default function ContactSection() {
                     <div className="flex flex-col justify-center lg:justify-start gap-6 text-lg">
                         {/* Phone */}
                         <a href="tel:(416) 471-4465" className="flex items-center gap-2 hover:text-[#0094D9]">
-                            <FaPhone className="h-6 w-6" />
+                            <FiPhone className="h-6 w-6" />
                             (416) 471-4465
                         </a>
 
@@ -40,7 +41,7 @@ export default function ContactSection() {
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="lg:w-1/2 bg-gray-800 rounded-xl shadow-lg p-8">
+                <div className="lg:w-1/2 bg-[#101010] rounded-xl shadow-lg p-8">
                     <form className="space-y-6">
                         <div>
                             <label htmlFor="name" className="block text-lg">
@@ -88,7 +89,6 @@ export default function ContactSection() {
                             <textarea
                                 id="company"
                                 name="company"
-                                rows="4"
                                 className="w-full mt-2 p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                                 placeholder="Company Name"
                             ></textarea>
@@ -101,7 +101,6 @@ export default function ContactSection() {
                             <textarea
                                 id="message"
                                 name="message"
-                                rows="4"
                                 className="w-full mt-2 p-3 bg-gray-900 text-white border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                                 placeholder="Interests/Questions"
                             ></textarea>

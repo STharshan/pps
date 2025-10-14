@@ -34,19 +34,12 @@ export default function TestimonialsSection() {
 
   return (
     <section className="bg-white dark:bg-black text-black scroll-m-10 dark:text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-poppins" id="testimonials">
-      <div className="max-w-6xl mx-auto text-center mb-12">
-        <p className="text-black uppercase font-semibold text-sm tracking-widest mb-2">
-          Testimonials
-        </p>
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#0094D9]">
-          What Customers Say
-        </h2>
-      </div>
 
       {/* Testimonial Layout */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 transition-all duration-500 ease-in-out">
         {/* Left Side - Text Content (Your image content here) */}
         <div className="w-full lg:w-1/2 text-center lg:text-left -mt-25">
+        <h2 className="uppercase font-semibold text-[#0094D9] mb-3">• What Our Clients Say</h2>
           <h3 className="text-3xl sm:text-4xl font-bold mb-4">TRUSTED BY MANY, LOVED BY ALL</h3>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">
             Our clients' success stories reflect our commitment to excellence. See how we've helped them find their dream homes, sustainable investments, and perfect getaways.

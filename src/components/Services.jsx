@@ -1,15 +1,5 @@
 import React, { useState } from 'react';
-import { 
-  Droplets, 
-  Building2, 
-  Briefcase, 
-  UtensilsCrossed, 
-  Hammer, 
-  Sparkles, 
-  Wind, 
-  Zap,
-  ArrowRight
-} from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 
 export default function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -19,57 +9,57 @@ export default function ServicesSection() {
       id: 1,
       title: 'Food Plant Sanitation',
       description: 'Professional sanitation solutions tailored for food processing facilities',
-      icon: UtensilsCrossed,
-      color: 'from-blue-500 to-cyan-500'
+      image: '/s1.jpg', // Replace with your image path
+      color: 'from-blue-500 to-cyan-500',
     },
     {
       id: 2,
       title: 'Commercial Cleaning',
       description: 'Comprehensive cleaning services for businesses and commercial spaces',
-      icon: Building2,
-      color: 'from-green-500 to-emerald-500'
+      image: '/s2.jpg', // Replace with your image path
+      color: 'from-green-500 to-emerald-500',
     },
     {
       id: 3,
       title: 'Office Cleaning',
       description: 'Maintain a clean and productive workspace with our office solutions',
-      icon: Briefcase,
-      color: 'from-purple-500 to-pink-500'
+      image: '/s3.jpg', // Replace with your image path
+      color: 'from-purple-500 to-pink-500',
     },
     {
       id: 4,
       title: 'Restaurant Cleaning',
       description: 'Specialized cleaning to ensure health and safety standards compliance',
-      icon: UtensilsCrossed,
-      color: 'from-orange-500 to-red-500'
+      image: '/s4.jpg', // Replace with your image path
+      color: 'from-orange-500 to-red-500',
     },
     {
       id: 5,
       title: 'Construction Cleaning',
       description: 'Post-construction debris removal and site cleaning expertise',
-      icon: Hammer,
-      color: 'from-yellow-500 to-orange-500'
+      image: '/s5.jpg', // Replace with your image path
+      color: 'from-yellow-500 to-orange-500',
     },
     {
       id: 6,
       title: 'Strip and Wax',
       description: 'Professional floor stripping and waxing for lasting shine',
-      icon: Sparkles,
-      color: 'from-indigo-500 to-blue-500'
+      image: '/s6.jpg', // Replace with your image path
+      color: 'from-indigo-500 to-blue-500',
     },
     {
       id: 7,
       title: 'Deep/Steam Cleaning',
       description: 'Intensive deep cleaning and steam treatment for stubborn dirt',
-      icon: Droplets,
-      color: 'from-teal-500 to-cyan-500'
+      image: '/s7.jpg', // Replace with your image path
+      color: 'from-teal-500 to-cyan-500',
     },
     {
       id: 8,
       title: 'Powerwash',
       description: 'High-pressure cleaning for exterior surfaces and tough grime',
-      icon: Wind,
-      color: 'from-sky-500 to-blue-500'
+      image: '/s8.jpg', // Replace with your image path
+      color: 'from-sky-500 to-blue-500',
     }
   ];
 
@@ -79,8 +69,8 @@ export default function ServicesSection() {
       <div className="max-w-6xl mx-auto mb-16">
         <div className="text-center mb-4">
           <h2 className="text-[#0094D9] font-bold text-lg tracking-widest uppercase mb-2">
-                    • Our Services
-                </h2>
+            • Our Services
+          </h2>
         </div>
         <h2 className="text-4xl md:text-5xl font-serif text-black text-center mb-6 max-w-3xl mx-auto">
           Key benefits that set us apart from other cleaning services
@@ -91,7 +81,6 @@ export default function ServicesSection() {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => {
-            const Icon = service.icon;
             return (
               <div
                 key={service.id}
@@ -107,9 +96,13 @@ export default function ServicesSection() {
 
                 {/* Card */}
                 <div className="relative h-full bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:border-gray-200 flex flex-col">
-                  {/* Icon Container */}
-                  <div className={`mb-6 inline-flex items-center justify-center w-14 h-14 md:w-16 md:h-16 rounded-xl bg-gradient-to-br ${service.color} shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-110`}>
-                    <Icon className="w-7 h-7 md:w-8 md:h-8 text-white" strokeWidth={1.5} />
+                  {/* Image Container */}
+                  <div className="mb-6 flex items-center justify-center w-full h-52 md:h-64 rounded-xl overflow-hidden group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
 
                   {/* Content */}
@@ -125,10 +118,9 @@ export default function ServicesSection() {
 
                   {/* Learn More Button */}
                   <button className={`mt-6 inline-flex items-center text-sm font-semibold transition-all duration-300 group/btn`}>
-                    <span className={`bg-gradient-to-r ${service.color} bg-clip-text text-transparent group-hover/btn:text-transparent`}>
-                      Learn More
-                    </span>
-                    <ArrowRight className={`ml-2 w-4 h-4 bg-gradient-to-r ${service.color} bg-clip-text text-transparent group-hover/btn:translate-x-1 transition-transform duration-300`} />
+                     <button className="bg-[#0094D9] hover:bg-[#36afe7] text-white px-6 py-2 items-center justify-center mx-auto rounded-md uppercase tracking-widest text-sm font-semibold transition">
+            Learn More 
+          </button>
                   </button>
                 </div>
               </div>
@@ -136,14 +128,6 @@ export default function ServicesSection() {
           })}
         </div>
       </div>
-
-      {/* CTA Section */}
-      {/* <div className="mt-16 text-center">
-        <button className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-emerald-600 to-teal-600 text-white font-semibold rounded-xl hover:shadow-xl hover:scale-105 transition-all duration-300">
-          <span>Get Started Today</span>
-          <Zap className="ml-2 w-5 h-5" />
-        </button>
-      </div> */}
     </div>
   );
 }
