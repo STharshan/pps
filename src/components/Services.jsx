@@ -1,6 +1,8 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the AOS CSS
 
 export default function ServicesSection() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -72,6 +74,11 @@ export default function ServicesSection() {
     },
   ];
 
+  useEffect(() => {
+    // Initialize AOS animations
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
     <section
       id="services"
@@ -96,7 +103,8 @@ export default function ServicesSection() {
             key={service.id}
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
-            className="group relative w-full sm:w-[48%] lg:w-[30%] bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col"
+            data-aos="fade-up" // Add AOS animation
+            className="group relative w-full sm:w-[48%] lg:w-[30%] bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col hover:shadow-[#0094D9] active:shadow-[#0094D9]"
           >
             {/* Image */}
             <div className="mb-6 flex items-center justify-center w-full h-52 md:h-64 rounded-xl overflow-hidden group-hover:shadow-xl transition-all duration-300">

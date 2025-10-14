@@ -1,13 +1,20 @@
-import React from "react";
-import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa"; // Import the icons
+"use client";
+import React, { useEffect } from "react";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { FiPhone } from "react-icons/fi";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS styles
 
 export default function ContactSection() {
+    useEffect(() => {
+        AOS.init({ duration: 1000, once: true }); // Initialize AOS with custom settings
+    }, []);
+
     return (
         <section className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8 font-poppins" id="contact">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
                 {/* Left Side - Contact Info */}
-                <div className="lg:w-1/2 text-center lg:text-left">
+                <div className="lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
                     <h2 className="text-3xl sm:text-4xl font-bold mb-4">Let's get in touch</h2>
                     <p className="text-lg sm:text-xl mb-6">
                         Ready to take your triathlon performance to the next level? Reach out today and let's create a personalized training plan for you.
@@ -16,32 +23,32 @@ export default function ContactSection() {
                     {/* Contact details in a single column */}
                     <div className="flex flex-col justify-center lg:justify-start gap-6 text-lg">
                         {/* Phone */}
-                        <a href="tel:(416) 471-4465" className="flex items-center gap-2 hover:text-[#0094D9]">
+                        <a href="tel:(416) 471-4465" className="flex items-center gap-2 hover:text-[#0094D9]" data-aos="fade-up">
                             <FiPhone className="h-6 w-6" />
                             (416) 471-4465
                         </a>
 
                         {/* Email */}
-                        <a href="mailto:info@ppsgroupinc.ca" className="flex items-center gap-2 hover:text-[#0094D9]">
+                        <a href="mailto:info@ppsgroupinc.ca" className="flex items-center gap-2 hover:text-[#0094D9]" data-aos="fade-up" data-aos-delay="200">
                             <FaEnvelope className="h-6 w-6" />
                             info@ppsgroupinc.ca
                         </a>
 
                         {/* Address */}
                         <a
-                            href="https://maps.app.goo.gl/uL7t2tvsAzeUfxBVA" // Replace with actual Google Maps link
+                            href="https://maps.app.goo.gl/uL7t2tvsAzeUfxBVA"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 hover:text-[#0094D9]"
+                            className="flex items-center gap-2 hover:text-[#0094D9]" data-aos="fade-up" data-aos-delay="400"
                         >
                             <FaMapMarkerAlt className="h-6 w-6" />
-                            PPS Group Inc. <br/> 5635 Finch Ave E Unit #7 <br/> Toronto, ON, M1B 5K9
+                            PPS Group Inc. <br /> 5635 Finch Ave E Unit #7 <br /> Toronto, ON, M1B 5K9
                         </a>
                     </div>
                 </div>
 
                 {/* Right Side - Contact Form */}
-                <div className="lg:w-1/2 bg-[#101010] rounded-xl shadow-lg p-8">
+                <div className="lg:w-1/2 bg-[#101010] rounded-xl shadow-lg p-8" data-aos="fade-left">
                     <form className="space-y-6">
                         <div>
                             <label htmlFor="name" className="block text-lg">

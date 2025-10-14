@@ -1,5 +1,8 @@
-import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import AOS from "aos"; // Import AOS
+import "aos/dist/aos.css"; // Import AOS CSS
 
 export default function TestimonialsSection() {
   const testimonials = [
@@ -32,14 +35,23 @@ export default function TestimonialsSection() {
 
   const testimonial = testimonials[current];
 
-  return (
-    <section className="bg-white dark:bg-black text-black scroll-m-10 dark:text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-poppins" id="testimonials">
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true }); // Initialize AOS
+  }, []);
 
+  return (
+    <section
+      className="bg-white dark:bg-black text-black scroll-m-10 dark:text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-poppins"
+      id="testimonials"
+    >
       {/* Testimonial Layout */}
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-center gap-10 transition-all duration-500 ease-in-out">
         {/* Left Side - Text Content (Your image content here) */}
-        <div className="w-full lg:w-1/2 text-center lg:text-left -mt-25">
-        <h2 className="uppercase font-semibold text-[#0094D9] mb-3">• What Our Clients Say</h2>
+        <div
+          className="w-full lg:w-1/2 text-center lg:text-left -mt-25"
+          data-aos="fade-right" // Add AOS animation to left side
+        >
+          <h2 className="uppercase font-semibold text-[#0094D9] mb-3">• What Our Clients Say</h2>
           <h3 className="text-3xl sm:text-4xl font-bold mb-4">TRUSTED BY MANY, LOVED BY ALL</h3>
           <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300">
             Our clients' success stories reflect our commitment to excellence. See how we've helped them find their dream homes, sustainable investments, and perfect getaways.
@@ -47,7 +59,10 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Right Side - Testimonial Card */}
-        <div className="w-full lg:w-1/2 relative">
+        <div
+          className="w-full lg:w-1/2 relative"
+          data-aos="fade-left" // Add AOS animation to right side
+        >
           <div className="relative bg-white dark:bg-black text-gray-900 dark:text-white rounded-2xl shadow-2xl p-6 sm:p-10 hover:shadow-[#0094D9] active:shadow-[#0094D9] cursor-pointer">
             {/* Quote mark inside card */}
             <div className="absolute top-4 right-4 text-red-500/30 text-6xl font-serif select-none">
