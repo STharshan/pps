@@ -1,24 +1,23 @@
 import React from 'react'
 
-import HeroSection from "../components/Service/foodplantpage/HeroSection"
-import WhyChooseSection from "../components/Service/foodplantpage/WhyChooseSection"
-import FourStepProcess from "../components/Service/foodplantpage/FourStepProcess"
-import IndustriesSection from "../components/Service/foodplantpage/IndustriesSection"
-import ComplianceSection from "../components/Service/foodplantpage/ComplianceSection"
-import TestimonialsSection from "../components/Service/foodplantpage/TestimonialsSection"
-import FAQSection from "../components/Service/foodplantpage/FAQSection"
-import GetAQuoteSection from "../components/Service/foodplantpage/GetAQuoteSection"
+import HeroSection from "../components/Service/Deepsteamcleaning/DeepSteamCleaningSection"
+import WhyChooseSteamCleaningSection from "../components/Service/Deepsteamcleaning/WhyChooseSteamCleaningSection"
+import IdealAreasMaterialsSection from "../components/Service/Deepsteamcleaning/IdealAreasMaterialsSection"
+import SteamCleaningProcessSection from "../components/Service/Deepsteamcleaning/SteamCleaningProcessSection"
+import ClientTestimonialsSection from "../components/Service/Deepsteamcleaning/ClientTestimonialsSection"
+import  FAQSection from "../components/Service/Deepsteamcleaning/FAQSection"
+import ExperienceTheDifferenceSection from "../components/Service/Deepsteamcleaning/ExperienceTheDifferenceSection"
 const Deepsteamcleaning = () => {
   return (
     <div>
       <HeroSection />
-      <WhyChooseSection />
-      <FourStepProcess />
-      <IndustriesSection />
-      <ComplianceSection />
-      <TestimonialsSection />
+      <WhyChooseSteamCleaningSection />
+      <IdealAreasMaterialsSection />
+      <SteamCleaningProcessSection />
+      <ClientTestimonialsSection />
       <FAQSection />
-      <GetAQuoteSection />
+      <ExperienceTheDifferenceSection />
+     
       
     </div>
   )
