@@ -78,16 +78,13 @@ export default function ServicesSection() {
       {/* Header Section */}
       <div className="max-w-6xl mx-auto mb-16">
         <div className="text-center mb-4">
-          <span className="inline-block px-4 py-2 bg-[#a2dcf7] text-black rounded-full text-sm font-semibold mb-4">
-            Our Services
-          </span>
+          <h2 className="text-[#0094D9] font-bold text-lg tracking-widest uppercase mb-2">
+                    • Our Services
+                </h2>
         </div>
-        <h2 className="text-4xl md:text-5xl font-serif text-[#0094D9] text-center mb-6">
+        <h2 className="text-4xl md:text-5xl font-serif text-black text-center mb-6 max-w-3xl mx-auto">
           Key benefits that set us apart from other cleaning services
         </h2>
-        <p className="text-center text-black text-lg max-w-2xl mx-auto">
-          Choose from our comprehensive range of professional cleaning solutions designed to meet every need
-        </p>
       </div>
 
       {/* Services Grid */}
@@ -116,7 +113,7 @@ export default function ServicesSection() {
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text transition-all duration-300" style={{
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-3 group-hover:bg-gradient-to-r group-hover:bg-clip-text transition-all duration-300" style={{
                     backgroundImage: hoveredIndex === index ? `linear-gradient(135deg, var(--color-from), var(--color-to))` : 'none'
                   }}>
                     {service.title}

@@ -22,21 +22,19 @@ export default function PartnersCarousel() {
   return (
     <section className="w-full bg-white py-12">
       <div className="text-center mb-6">
-        <h2 className="text-[#0094D9] text-xl font-semibold">
-          We’ve partnered with
-        </h2>
+        <h2 className="text-black text-xl font-semibold">We’ve partnered with</h2>
       </div>
 
       {/* Carousel container */}
-      <div className="overflow-hidden relative w-full">
-        <div className="flex animate-scroll space-x-12">
-          {/* Duplicate logos for seamless infinite scroll */}
-          {[...logos, ...logos].map((logo, i) => (
+      <div className="overflow-hidden max-w-3xl mx-auto relative w-full">
+        <div className="flex space-x-12 animate-scroll">
+          {/* Render only 5 logos per row */}
+          {logos.map((logo, i) => (
             <img
               key={i}
               src={logo}
               alt={`Partner ${i + 1}`}
-              className="h-15 w-auto object-contain opacity-80 hover:opacity-100 transition"
+              className="partner-logo h-15 w-auto object-contain opacity-80 hover:opacity-100 transition"
             />
           ))}
         </div>

@@ -19,8 +19,8 @@ const AboutSection = () => {
 
                     {/* Text Content */}
                     <div>
-                        <p>About Us</p>
-                        <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0094D9] mb-6 leading-tight">
+                        <h2 className="uppercase font-semibold text-[#0094D9] ">• About Us</h2>
+                        <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-black  mb-6 leading-tight">
                             Let us take care of the cleaning while you build your business
                         </h4>
 

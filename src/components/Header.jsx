@@ -18,10 +18,10 @@ export default function HeroSection() {
 
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-4">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-light tracking-widest mb-2 text-[#0094D9]">
-          PPS Group
+        <h2 className="text-7xl font-light tracking-widest mb-2 text-[#0094D9]">
+          PPS GROUP
         </h2>
-        <p className="text-base md:text-lg mb-6 font-light text-black">
+        <p className="text-xl uppercase mt-5 mb-6 font-light text-black">
           Reliable Team Professional Service
         </p>
         <a href="#contact">
