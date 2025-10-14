@@ -104,7 +104,7 @@ export default function ServicesSection() {
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             data-aos="fade-up" // Add AOS animation
-            className="group relative w-full sm:w-[48%] lg:w-[30%] bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col hover:shadow-[#0094D9] active:shadow-[#0094D9]"
+            className="group relative w-full sm:w-[48%] md:w-[40%] lg:w-[30%] bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl hover:border-gray-200 transition-all duration-300 flex flex-col hover:shadow-[#0094D9] active:shadow-[#0094D9]"
           >
             {/* Image */}
             <div className="mb-6 flex items-center justify-center w-full h-52 md:h-64 rounded-xl overflow-hidden group-hover:shadow-xl transition-all duration-300">

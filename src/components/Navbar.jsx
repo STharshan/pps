@@ -40,7 +40,7 @@ export default function Navbar() {
         </a>
 
         {/* Centered Nav Links */}
-        <nav className="hidden md:flex space-x-10 text-black font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2">
+        <nav className="hidden lg:flex space-x-10 text-black font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2">
           <a href="#home" className="hover:text-[#0094D9] transition">Home</a>
           <a href="#about" className="hover:text-[#0094D9] transition">About</a>
           <a href="#services" className="hover:text-[#0094D9] transition">Services</a>
@@ -50,7 +50,7 @@ export default function Navbar() {
 
         {/* Hamburger Icon (Mobile) */}
         <div
-          className="md:hidden text-white text-3xl cursor-pointer"
+          className="lg:hidden text-white text-3xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <FiX className="text-black hover:text-[#0094D9] active:text-[#0094D9]" /> : <FiMenu className="text-black hover:text-[#0094D9] active:text-[#0094D9]" />}
@@ -59,7 +59,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 left-0 p-3 mt-20 w-full bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white text-xl font-semibold uppercase tracking-wider transition-transform duration-300 ${
+        className={`lg:hidden fixed top-0 left-0 p-3 mt-20 w-full bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white text-xl font-semibold uppercase tracking-wider transition-transform duration-300 ${
           isOpen ? "translate-x-0 max-h-[80vh] overflow-y-auto" : "-translate-x-full"
         }`}
       >
