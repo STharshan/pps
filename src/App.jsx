@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import GDPRConsent from './components/GDPRButton';
 import TermsConditions from './components/Term';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Foodplante from './pages/Foodplante';
 import Commercial from './pages/Commercial';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Foodplante" element={<Foodplante />} />
         <Route path="/commercial-cleaning" element={<Commercial />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />

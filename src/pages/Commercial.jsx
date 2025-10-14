@@ -1,5 +1,5 @@
 import React from 'react'
-import ComHeroSection from '../components/Commercial/ComHero'
+import ComHeroSection from '../components/Service/Commercial/ComHero'
 
 const Commercial = () => {
   return (
