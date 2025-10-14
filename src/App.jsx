@@ -11,6 +11,7 @@ import Restaurantcleaning from "./pages/Restaurantcleaning"
 import Postconstructioncleaningpage from "./pages/Postconstructioncleaningpage"
 import Deepsteamcleaning from "./pages/Deepsteamcleaning"
 import Floor from './pages/Floor';
+import Powerwashing from './pages/Powerwashing';
 function App() {
   return (
     <Router>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/commercial-cleaning" element={<Commercial />} />
         <Route path="/Restaurantcleaning" element={<Restaurantcleaning />} />
         <Route path='/strip-and-wax' element={<Floor />} />
+        <Route path='/power-washing' element={<Powerwashing />} />
         <Route path="/Postconstructioncleaning" element={<Postconstructioncleaningpage />} />
         <Route path="/Deepsteamcleaning" element={<Deepsteamcleaning />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
