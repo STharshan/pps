@@ -8,6 +8,7 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import Foodplante from './pages/Foodplante';
 import Commercial from './pages/Commercial';
 import Restaurantcleaning from "./pages/Restaurantcleaning"
+import Postconstructioncleaningpage from "./pages/Postconstructioncleaningpage"
 function App() {
   return (
     <Router>
@@ -17,6 +18,7 @@ function App() {
         <Route path="/Foodplante" element={<Foodplante />} />
         <Route path="/commercial-cleaning" element={<Commercial />} />
           <Route path="/Restaurantcleaning" element={<Restaurantcleaning />} />
+           <Route path="/Postconstructioncleaning" element={<Postconstructioncleaningpage />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
