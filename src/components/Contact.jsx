@@ -11,7 +11,7 @@ export default function ContactSection() {
     }, []);
 
     return (
-        <section className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8 font-poppins" id="contact">
+        <section className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8 font-poppins scroll-m-10" id="contact">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
                 {/* Left Side - Contact Info */}
                 <div className="lg:w-1/2 text-center lg:text-left" data-aos="fade-right">
@@ -23,13 +23,13 @@ export default function ContactSection() {
                     {/* Contact details in a single column */}
                     <div className="flex flex-col justify-center lg:justify-start gap-6 text-lg p-3">
                         {/* Phone */}
-                        <a href="tel:(416) 471-4465" className="flex items-center gap-2 hover:text-[#0094D9]" data-aos="fade-up">
+                        <a href="tel:(416) 471-4465" className="flex items-center gap-2 hover:text-[#0094D9] active:text-[#0094D9]" data-aos="fade-up">
                             <FiPhone className="h-6 w-6" />
                             (416) 471-4465
                         </a>
 
                         {/* Email */}
-                        <a href="mailto:info@ppsgroupinc.ca" className="flex items-center gap-2 hover:text-[#0094D9]" data-aos="fade-up" data-aos-delay="200">
+                        <a href="mailto:info@ppsgroupinc.ca" className="flex items-center gap-2 hover:text-[#0094D9] active:text-[#0094D9]" data-aos="fade-up" data-aos-delay="200">
                             <FaEnvelope className="h-6 w-6" />
                             info@ppsgroupinc.ca
                         </a>
@@ -39,7 +39,7 @@ export default function ContactSection() {
                             href="https://maps.app.goo.gl/uL7t2tvsAzeUfxBVA"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 text-left  hover:text-[#0094D9]" data-aos="fade-up" data-aos-delay="400"
+                            className="flex items-center gap-2 text-left  hover:text-[#0094D9] active:text-[#0094D9]" data-aos="fade-up" data-aos-delay="400"
                         >
                             <FaMapMarkerAlt className="h-6 w-6" />
                             PPS Group Inc. <br /> 5635 Finch Ave E Unit #7 <br /> Toronto, ON, M1B 5K9

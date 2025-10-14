@@ -53,7 +53,7 @@ export default function Navbar() {
           className="md:hidden text-white text-3xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FiX className="text-black z-20" /> : <FiMenu className="text-black" />}
+          {isOpen ? <FiX className="text-black hover:text-[#0094D9] active:text-[#0094D9]" /> : <FiMenu className="text-black hover:text-[#0094D9] active:text-[#0094D9]" />}
         </div>
       </div>
 
@@ -65,35 +65,35 @@ export default function Navbar() {
       >
         <a
           href="#home"
-          className="hover:text-[#0094D9]"
+          className="hover:text-[#0094D9] active:text-[#0094D9]"
           onClick={() => setIsOpen(false)}
         >
           Home
         </a>
         <a
           href="#about"
-          className="hover:text-[#0094D9]"
+          className="hover:text-[#0094D9] active:text-[#0094D9]"
           onClick={() => setIsOpen(false)}
         >
           About
         </a>
         <a
           href="#services"
-          className="hover:text-[#0094D9]"
+          className="hover:text-[#0094D9] active:text-[#0094D9]"
           onClick={() => setIsOpen(false)}
         >
           Services
         </a>
         <a
           href="#testimonials"
-          className="hover:text-[#0094D9]"
+          className="hover:text-[#0094D9] active:text-[#0094D9]"
           onClick={() => setIsOpen(false)}
         >
           Client
         </a>
         <a
           href="#contact"
-          className="hover:text-[#0094D9]"
+          className="hover:text-[#0094D9] active:text-[#0094D9]"
           onClick={() => setIsOpen(false)}
         >
           Contact
