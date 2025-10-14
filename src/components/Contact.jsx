@@ -21,7 +21,7 @@ export default function ContactSection() {
                     </p>
 
                     {/* Contact details in a single column */}
-                    <div className="flex flex-col justify-center lg:justify-start gap-6 text-lg">
+                    <div className="flex flex-col justify-center lg:justify-start gap-6 text-lg p-3">
                         {/* Phone */}
                         <a href="tel:(416) 471-4465" className="flex items-center gap-2 hover:text-[#0094D9]" data-aos="fade-up">
                             <FiPhone className="h-6 w-6" />
@@ -39,7 +39,7 @@ export default function ContactSection() {
                             href="https://maps.app.goo.gl/uL7t2tvsAzeUfxBVA"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="flex items-center gap-2 hover:text-[#0094D9]" data-aos="fade-up" data-aos-delay="400"
+                            className="flex items-center gap-2 text-left  hover:text-[#0094D9]" data-aos="fade-up" data-aos-delay="400"
                         >
                             <FaMapMarkerAlt className="h-6 w-6" />
                             PPS Group Inc. <br /> 5635 Finch Ave E Unit #7 <br /> Toronto, ON, M1B 5K9

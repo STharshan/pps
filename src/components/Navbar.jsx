@@ -53,21 +53,51 @@ export default function Navbar() {
           className="md:hidden text-white text-3xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FiX className="text-black"/> : <FiMenu className="text-black"/>}
+          {isOpen ? <FiX className="text-black z-20" /> : <FiMenu className="text-black" />}
         </div>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed top-0 left-0 h-screen w-full bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white text-xl font-semibold uppercase tracking-wider transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+        className={`md:hidden fixed top-0 left-0 p-3 mt-20 w-full bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center space-y-8 text-white text-xl font-semibold uppercase tracking-wider transition-transform duration-300 ${
+          isOpen ? "translate-x-0 max-h-[80vh] overflow-y-auto" : "-translate-x-full"
         }`}
       >
-        <a href="#home" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Home</a>
-        <a href="#about" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>About</a>
-        <a href="#services" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Services</a>
-        <a href="#testimonials" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Client</a>
-        <a href="#contact" className="hover:text-[#0094D9]" onClick={() => setIsOpen(false)}>Contact</a>
+        <a
+          href="#home"
+          className="hover:text-[#0094D9]"
+          onClick={() => setIsOpen(false)}
+        >
+          Home
+        </a>
+        <a
+          href="#about"
+          className="hover:text-[#0094D9]"
+          onClick={() => setIsOpen(false)}
+        >
+          About
+        </a>
+        <a
+          href="#services"
+          className="hover:text-[#0094D9]"
+          onClick={() => setIsOpen(false)}
+        >
+          Services
+        </a>
+        <a
+          href="#testimonials"
+          className="hover:text-[#0094D9]"
+          onClick={() => setIsOpen(false)}
+        >
+          Client
+        </a>
+        <a
+          href="#contact"
+          className="hover:text-[#0094D9]"
+          onClick={() => setIsOpen(false)}
+        >
+          Contact
+        </a>
       </div>
     </header>
   );
