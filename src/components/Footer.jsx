@@ -28,7 +28,7 @@ export default function Footer() {
             alt="PPS Group Logo"
             className="h-10 w-auto object-contain"
           />
-          <p className="text-sm leading-relaxed text-gray-400 max-w-xs">
+          <p className="leading-relaxed text-gray-400 max-w-xs">
             PPS Group delivers precision performance solutions - driving
             innovation, efficiency, and excellence across industries.
           </p>
@@ -42,7 +42,7 @@ export default function Footer() {
               <li key={i}>
                 <a
                   href={item.href}
-                  className="hover:text-white text-sm transition-colors duration-200"
+                  className="transition-colors hover:text-[#36afe7] duration-200"
                 >
                   {item.title}
                 </a>
@@ -60,7 +60,7 @@ export default function Footer() {
                 <Icon size={17} className="text-gray-400" />
                 <a
                   href={href}
-                  className="hover:text-white text-sm transition-colors duration-200"
+                  className="hover:text-[#36afe7] transition-colors duration-200"
                 >
                   {name}
                 </a>
