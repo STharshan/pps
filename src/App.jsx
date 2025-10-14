@@ -8,7 +8,8 @@ import PrivacyPolicy from './components/PrivacyPolicy';
 import Foodplante from './pages/Foodplante';
 import Commercial from './pages/Commercial';
 import Restaurantcleaning from "./pages/Restaurantcleaning"
-import Floor from './pages/Floor';
+import Postconstructioncleaningpage from "./pages/Postconstructioncleaningpage"
+import Deepsteamcleaning from "./pages/Deepsteamcleaning"
 function App() {
   return (
     <Router>
@@ -18,7 +19,8 @@ function App() {
         <Route path="/Foodplante" element={<Foodplante />} />
         <Route path="/commercial-cleaning" element={<Commercial />} />
         <Route path="/Restaurantcleaning" element={<Restaurantcleaning />} />
-        <Route path="/strip-and-wax" element={<Floor />} />
+        <Route path="/Postconstructioncleaning" element={<Postconstructioncleaningpage />} />
+        <Route path="/Deepsteamcleaning" element={<Deepsteamcleaning />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
