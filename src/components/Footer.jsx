@@ -12,9 +12,9 @@ export default function Footer() {
   ];
 
   const socials = [
-    { name: "Facebook", icon: Facebook, href: "#" },
-    { name: "Instagram", icon: Instagram, href: "#" },
-    { name: "Twitter", icon: Twitter, href: "#" },
+    { name: "Facebook", icon: Facebook, href: "https://web.facebook.com/ppsgroupinc/?_rdc=1&_rdr#" },
+    { name: "Instagram", icon: Instagram, href: "https://www.instagram.com/ppsgroupinc/" },
+    { name: "Twitter", icon: Twitter, href: "https://x.com/ppsgroupinc/" },
   ];
 
   return (
