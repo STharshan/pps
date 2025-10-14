@@ -1,6 +1,6 @@
-"use client";
 import React, { useState, useEffect } from "react";
 import { ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the AOS CSS
 
@@ -15,6 +15,7 @@ export default function ServicesSection() {
         "Professional sanitation solutions tailored for food processing facilities",
       image: "/s1.jpg",
       color: "from-blue-500 to-cyan-500",
+      link: "/Foodplante", // Add a link for the service
     },
     {
       id: 2,
@@ -23,6 +24,7 @@ export default function ServicesSection() {
         "Comprehensive cleaning services for businesses and commercial spaces",
       image: "/s2.jpg",
       color: "from-green-500 to-emerald-500",
+      link: "/commercial-cleaning", // Add a link for the service
     },
     {
       id: 3,
@@ -31,6 +33,7 @@ export default function ServicesSection() {
         "Maintain a clean and productive workspace with our office solutions",
       image: "/s3.jpg",
       color: "from-purple-500 to-pink-500",
+      link: "/commercial-cleaning", // Add a link for the service
     },
     {
       id: 4,
@@ -39,6 +42,7 @@ export default function ServicesSection() {
         "Specialized cleaning to ensure health and safety standards compliance",
       image: "/s4.jpg",
       color: "from-orange-500 to-red-500",
+      link: "/Restaurantcleaning", // Add a link for the service
     },
     {
       id: 5,
@@ -47,6 +51,7 @@ export default function ServicesSection() {
         "Post-construction debris removal and site cleaning expertise",
       image: "/s5.jpg",
       color: "from-yellow-500 to-orange-500",
+      link: "/Postconstructioncleaning", // Add a link for the service
     },
     {
       id: 6,
@@ -55,6 +60,7 @@ export default function ServicesSection() {
         "Professional floor stripping and waxing for lasting shine",
       image: "/s6.jpg",
       color: "from-indigo-500 to-blue-500",
+      link: "/strip-and-wax", // Add a link for the service
     },
     {
       id: 7,
@@ -63,6 +69,7 @@ export default function ServicesSection() {
         "Intensive deep cleaning and steam treatment for stubborn dirt",
       image: "/s7.jpg",
       color: "from-teal-500 to-cyan-500",
+      link: "/Deepsteamcleaning", // Add a link for the service
     },
     {
       id: 8,
@@ -71,6 +78,7 @@ export default function ServicesSection() {
         "High-pressure cleaning for exterior surfaces and tough grime",
       image: "/s8.jpg",
       color: "from-sky-500 to-blue-500",
+      link: "/power-washing", // Add a link for the service
     },
   ];
 
@@ -117,11 +125,9 @@ export default function ServicesSection() {
 
             {/* Title */}
             <h3
-              className={`text-lg md:text-xl font-bold text-gray-900 mb-3 text-center transition-all duration-300 ${
-                hoveredIndex === index
-                  ? "bg-gradient-to-r bg-clip-text text-transparent from-[#0094D9] to-[#36afe7]"
-                  : ""
-              }`}
+              className={`text-lg md:text-xl font-bold text-gray-900 mb-3 text-center transition-all duration-300 ${hoveredIndex === index
+                ? "bg-gradient-to-r bg-clip-text text-transparent from-[#0094D9] to-[#36afe7]"
+                : ""}`}
             >
               {service.title}
             </h3>
@@ -133,10 +139,13 @@ export default function ServicesSection() {
 
             {/* Learn More Button */}
             <div className="flex justify-center mt-6">
-              <button className="bg-[#0094D9] hover:bg-[#36afe7] text-white px-6 py-2 rounded-md uppercase tracking-widest text-sm font-semibold transition flex items-center gap-2">
+              <a
+                href={service.link} // Use Link for navigation
+                className="bg-[#0094D9] hover:bg-[#36afe7] text-white px-6 py-2 rounded-md uppercase tracking-widest text-sm font-semibold transition flex items-center gap-2"
+              >
                 Learn More
                 <ArrowRight className="w-4 h-4" />
-              </button>
+              </a>
             </div>
           </div>
         ))}

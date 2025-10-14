@@ -48,8 +48,8 @@ export default function TestimonialsSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: brandText }}
+            className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9]"
+
           >
             What Our Clients Say
           </h2>

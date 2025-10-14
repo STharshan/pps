@@ -53,7 +53,7 @@ export default function IdealSurfacesSection() {
       <div className="container max-w-6xl mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-balance text-[#0094D9]">
             Ideal for These Surfaces
           </h2>
           <p className="text-xl text-muted-foreground text-pretty">
