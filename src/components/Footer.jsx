@@ -4,11 +4,11 @@ import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
   const sections = [
-    { title: "Home", href: "#" },
-    { title: "About", href: "#" },
-    { title: "Services", href: "#" },
-    { title: "Client", href: "#" },
-    { title: "Contact", href: "#" },
+    { title: "Home", href: "#home" },
+    { title: "About", href: "#about" },
+    { title: "Services", href: "#services" },
+    { title: "Client", href: "#testimonials" },
+    { title: "Contact", href: "#contact" },
   ];
 
   const socials = [
@@ -22,11 +22,11 @@ export default function Footer() {
       {/* === TOP SECTION === */}
       <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-start">
         {/* Logo + Description */}
-        <div className="space-y-5">
+        <div className="">
           <img
-            src="/logo.png" // Replace with your actual logo path
+            src="/footer.png" // Replace with your actual logo path
             alt="PPS Group Logo"
-            className="h-10 w-auto object-contain"
+            className="h-30 w-80 object-contain"
           />
           <p className="leading-relaxed text-gray-400 max-w-xs">
             PPS Group delivers precision performance solutions - driving
