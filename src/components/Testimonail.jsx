@@ -41,7 +41,7 @@ export default function TestimonialsSection() {
 
   return (
     <section
-      className="bg-white dark:bg-black text-black scroll-m-10 dark:text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-poppins"
+      className="bg-white text-black scroll-m-10 dark:text-white py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden font-poppins"
       id="testimonials"
     >
       {/* Testimonial Layout */}
