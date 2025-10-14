@@ -53,7 +53,7 @@ export default function Navbar() {
           className="md:hidden text-white text-3xl cursor-pointer"
           onClick={() => setIsOpen(!isOpen)}
         >
-          {isOpen ? <FiX /> : <FiMenu />}
+          {isOpen ? <FiX className="text-black"/> : <FiMenu className="text-black"/>}
         </div>
       </div>
 
