@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import GDPRConsent from './components/GDPRButton';
 import TermsConditions from './components/Term';
 import PrivacyPolicy from './components/PrivacyPolicy';
+import Commercial from './pages/Commercial';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/commercial-cleaning" element={<Commercial />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
