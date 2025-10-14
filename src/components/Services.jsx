@@ -86,16 +86,11 @@ export default function ServicesSection() {
                 key={service.id}
                 onMouseEnter={() => setHoveredIndex(index)}
                 onMouseLeave={() => setHoveredIndex(null)}
-                className="group relative h-full"
+                className="group relative h-full "
               >
-                {/* Animated background glow */}
-                <div
-                  className={`absolute inset-0 bg-gradient-to-br ${service.color} rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-300 blur-xl`}
-                  aria-hidden="true"
-                />
 
                 {/* Card */}
-                <div className="relative h-full bg-white rounded-2xl p-6 md:p-8 border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:border-gray-200 flex flex-col">
+                <div className="relative h-full bg-white rounded-2xl p-6 md:p-8 border hover:shadow-[#0094D9] active:shadow-[#0094D9] cursor-pointer border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:border-gray-200 flex flex-col">
                   {/* Image Container */}
                   <div className="mb-6 flex items-center justify-center w-full h-52 md:h-64 rounded-xl overflow-hidden group-hover:shadow-xl transition-all duration-300 group-hover:scale-110">
                     <img
@@ -118,9 +113,9 @@ export default function ServicesSection() {
 
                   {/* Learn More Button */}
                   <button className={`mt-6 inline-flex items-center text-sm font-semibold transition-all duration-300 group/btn`}>
-                     <button className="bg-[#0094D9] hover:bg-[#36afe7] text-white px-6 py-2 items-center justify-center mx-auto rounded-md uppercase tracking-widest text-sm font-semibold transition">
-            Learn More 
-          </button>
+                    <button className="bg-[#0094D9] hover:bg-[#36afe7] text-white px-6 py-2 items-center justify-center mx-auto rounded-md uppercase tracking-widest text-sm font-semibold transition">
+                      Learn More
+                    </button>
                   </button>
                 </div>
               </div>

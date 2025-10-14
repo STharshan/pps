@@ -48,7 +48,7 @@ export default function TestimonialsSection() {
 
         {/* Right Side - Testimonial Card */}
         <div className="w-full lg:w-1/2 relative">
-          <div className="relative bg-white dark:bg-black text-gray-900 dark:text-white rounded-2xl shadow-2xl p-6 sm:p-10">
+          <div className="relative bg-white dark:bg-black text-gray-900 dark:text-white rounded-2xl shadow-2xl p-6 sm:p-10 hover:shadow-[#0094D9] active:shadow-[#0094D9] cursor-pointer">
             {/* Quote mark inside card */}
             <div className="absolute top-4 right-4 text-red-500/30 text-6xl font-serif select-none">
               &rdquo;
@@ -106,8 +106,8 @@ export default function TestimonialsSection() {
                   onClick={() => setCurrent(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${
                     current === index
-                      ? "bg-[#0094D9] w-8"
-                      : "bg-zinc-700 w-2 hover:bg-zinc-600"
+                      ? "bg-[#0094D9] w-8 "
+                      : "bg-zinc-700 w-2 hover:bg-zinc-600 "
                   }`}
                 />
               ))}

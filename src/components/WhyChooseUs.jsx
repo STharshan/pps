@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
 
     return (
         <section className="bg-white py-16 px-6 md:px-12 lg:px-20 font-poppins" id="whychooseus">
-            <div className="max-w-7xl mx-auto text-center mb-15 flex gap-15">
+            <div className="max-w-6xl mx-auto text-center mb-15 flex gap-15">
                 <h2 className="text-[#0094D9] font-bold text-lg tracking-widest uppercase mb-2">
                     • Why Choose Us
                 </h2>
@@ -45,11 +45,11 @@ export default function WhyChooseUs() {
             </div>
 
             {/* Card Grid */}
-            <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-8">
+            <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8">
                 {items.map((item, index) => (
                     <div
                         key={item.id}
-                        className="relative bg-white shadow-lg rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-sm flex flex-col"
+                        className="relative bg-white shadow-lg hover:shadow-[#0094D9] active:shadow-[#0094D9] rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-sm flex flex-col"
                     >
                         <div className="absolute -top-4 -left-4 bg-[#0094D9] text-white w-10 h-10 flex items-center justify-center rounded-full font-semibold">
                             {item.id}

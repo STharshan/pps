@@ -1,125 +1,105 @@
-import React from 'react';
-import { Activity, Twitter, Instagram, Music2, Mail, ExternalLink, Facebook } from 'lucide-react';
+"use client";
+import React from "react";
+import { Facebook, Instagram, Twitter } from "lucide-react";
 
 export default function Footer() {
-    const sections = [
-        { title: 'Home', href: '#home' },
-        { title: 'About', href: '#about' },
-        { title: 'Services', href: '#services' },
-        { title: 'Client', href: '#testimonials' },
-        { title: 'Contact', href: '#contact' }
-    ];
+  const sections = [
+    { title: "Home", href: "#" },
+    { title: "About", href: "#" },
+    { title: "Services", href: "#" },
+    { title: "Client", href: "#" },
+    { title: "Contact", href: "#" },
+  ];
 
-    const socials = [
-        { name: 'Facebook', icon: Facebook, href: 'https://www.facebook.com/ppsgroupinc/' },
-        { name: 'Instagram', icon: Instagram, href: 'https://www.instagram.com/ppsgroupinc/' },
-        { name: 'Twitter', icon: Twitter, href: 'https://x.com/ppsgroupinc/' }
-    ];
+  const socials = [
+    { name: "Facebook", icon: Facebook, href: "#" },
+    { name: "Instagram", icon: Instagram, href: "#" },
+    { name: "Twitter", icon: Twitter, href: "#" },
+  ];
 
-    return (
-        <footer className="bg-black text-white font-poppins">
-            {/* Main Footer Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+  return (
+    <footer className="bg-[#0e0e0e] text-gray-300 border-t border-gray-800">
+      {/* === TOP SECTION === */}
+      <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-start">
+        {/* Logo + Description */}
+        <div className="space-y-5">
+          <img
+            src="/logo.png" // Replace with your actual logo path
+            alt="PPS Group Logo"
+            className="h-10 w-auto object-contain"
+          />
+          <p className="text-sm leading-relaxed text-gray-400 max-w-xs">
+            PPS Group delivers precision performance solutions - driving
+            innovation, efficiency, and excellence across industries.
+          </p>
+        </div>
 
-                {/* Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 sm:gap-16 mb-12">
+        {/* Navigation */}
+        <div className="md:pl-12">
+          <h3 className="text-lg font-semibold text-white mb-5">Sections</h3>
+          <ul className="flex flex-col space-y-2">
+            {sections.map((item, i) => (
+              <li key={i}>
+                <a
+                  href={item.href}
+                  className="hover:text-white text-sm transition-colors duration-200"
+                >
+                  {item.title}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-                    {/* Left Section - Brand Info */}
-                    <div className="col-span-1">
-                        <div className="text-black mb-6">
-                            <img
-                                src="/logo.png" // Replace with your logo image path
-                                alt="PPS Group Logo"
-                                className="w-40 h-auto object-contain mx-auto" // Increased size and centered
-                            />
-                        </div>
+        {/* Social Links */}
+        <div className="md:pl-6">
+          <h3 className="text-lg font-semibold text-white mb-5">Socials</h3>
+          <ul className="flex flex-col space-y-3">
+            {socials.map(({ name, icon: Icon, href }, i) => (
+              <li key={i} className="flex items-center gap-3">
+                <Icon size={17} className="text-gray-400" />
+                <a
+                  href={href}
+                  className="hover:text-white text-sm transition-colors duration-200"
+                >
+                  {name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
-                        <p className="text-gray-400 text-sm sm:text-base leading-relaxed mb-6 text-center sm:text-left">
-                            Improve your triathlon performance with personalized training plans guided by an experienced coach committed to your success.
-                        </p>
-                    </div>
+      {/* === DIVIDER === */}
+      <div className="border-t border-gray-800"></div>
 
-                    {/* Middle Section - Links */}
-                    <div className="col-span-1">
-                        <h3 className="text-lg font-semibold mb-6 text-white">Sections</h3>
-                        <nav className="space-y-4">
-                            {sections.map((section, index) => (
-                                <a
-                                    key={index}
-                                    href={section.href}
-                                    className=" text-gray-400 hover:text-[#0094D9] transition-colors duration-300 text-sm sm:text-base group flex items-center gap-2"
-                                >
-                                    <span>{section.title}</span>
-                                    <span className="inline-block opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <ExternalLink className="w-4 h-4" />
-                                    </span>
-                                </a>
-                            ))}
-                        </nav>
-                    </div>
-
-                    {/* Right Section - Social Links */}
-                    <div className="col-span-1">
-                        <h3 className="text-lg font-semibold mb-6 text-white">Socials</h3>
-                        <div className="space-y-4">
-                            {socials.map((social, index) => {
-                                const Icon = social.icon;
-                                return (
-                                    <a
-                                        key={index}
-                                        href={social.href}
-                                        target='_blank'
-                                        className="flex items-center gap-3 text-gray-400 hover:text-[#0094D9] transition-colors duration-300 group text-sm sm:text-base"
-                                    >
-                                        <Icon className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
-                                        <span>{social.name}</span>
-                                    </a>
-                                );
-                            })}
-                        </div>
-                    </div>
-                </div>
-
-                {/* Divider */}
-                <div className="h-px bg-gradient-to-r from-transparent via-gray-700 to-transparent mb-8"></div>
-                <div className="text-center text-gray-400">
-                    <p>&copy; 2025 PPS Group. All rights reserved.</p>
-                </div>
-
-                {/* Bottom Bar */}
-                <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-3 text-center font-semibold text-gray-400">
-                    {/* Left: Terms & Privacy */}
-                    <div className="flex gap-4 text-sm">
-                        <a
-                            href="/terms"
-                            className="text-gray-400 hover:text-[#0094D9] transition duration-300"
-                        >
-                            Terms & Conditions
-                        </a>
-                        <span className="text-gray-500">|</span>
-                        <a
-                            href="/privacy"
-                            className="text-gray-400 hover:text-[#0094D9] transition duration-300"
-                        >
-                            Privacy Policy
-                        </a>
-                    </div>
-
-                    {/* Center: Powered by Ansely (unchanged) */}
-                    <p className="text-center font-semibold text-gray-400">
-                        Powered by{" "}
-                        <a
-                            href="https://www.ansely.co.uk/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-[#0094D9] hover:underline"
-                        >
-                            Ansely
-                        </a>
-                    </p>
-                </div>
-            </div>
-
-        </footer>
-    );
+      {/* === BOTTOM SECTION === */}
+      <div className="max-w-6xl mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row items-center justify-between text-gray-500 gap-3">
+        <p>© 2025 PPS Group. All rights reserved.</p>
+        <div className="flex items-center gap-5">
+          <a
+            href="#"
+            className="hover:text-white transition-colors duration-200"
+          >
+            Terms & Conditions
+          </a>
+          <a
+            href="#"
+            className="hover:text-white transition-colors duration-200"
+          >
+            Privacy Policy
+          </a>
+          <span>
+            Powered by{" "}
+            <a
+              href="#"
+              className="text-[#00AEEF] hover:underline font-medium"
+            >
+              Ansely
+            </a>
+          </span>
+        </div>
+      </div>
+    </footer>
+  );
 }

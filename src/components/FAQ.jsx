@@ -30,7 +30,7 @@ export default function CivitasFAQ() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-blue-50 font-poppins" id='faq'>
       {/* Main Container */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+      <div className="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start">
           
           {/* Left Section */}
@@ -43,7 +43,7 @@ export default function CivitasFAQ() {
               Your questions, answered effortlessly with us
             </h1>
             
-            <button className="inline-flex items-center justify-center gap-2 w-fit bg-[#0094D9] hover:bg-[#0980b8] text-slate-900 font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 group">
+            <button className="inline-flex items-center justify-center gap-2 w-fit bg-[#0094D9] hover:bg-[#0980b8] text-slate-900 font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-105 active:shadow-xl group">
               <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
               <span>Book a call</span>
             </button>
@@ -54,7 +54,7 @@ export default function CivitasFAQ() {
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 overflow-hidden"
+                className="group bg-white rounded-xl hover:shadow-[#0094D9] active:shadow-[#0094D9] cursor-pointer shadow-sm hover:shadow-md transition-all duration-300 border border-slate-200 overflow-hidden"
               >
                 <button
                   onClick={() => toggleExpanded(index)}

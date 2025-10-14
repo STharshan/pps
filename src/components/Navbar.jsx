@@ -26,7 +26,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 w-full font-poppins z-30 transition-all duration-300 ${
-        isScrolled ? "bg-black" : "bg-transparent"
+        isScrolled ? "bg-white" : "bg-transparent"
       } backdrop-blur-sm`}
     >
       <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
@@ -40,7 +40,7 @@ export default function Navbar() {
         </a>
 
         {/* Centered Nav Links */}
-        <nav className="hidden md:flex space-x-10 text-white font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2">
+        <nav className="hidden md:flex space-x-10 text-black font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2">
           <a href="#home" className="hover:text-[#0094D9] transition">Home</a>
           <a href="#about" className="hover:text-[#0094D9] transition">About</a>
           <a href="#services" className="hover:text-[#0094D9] transition">Services</a>
