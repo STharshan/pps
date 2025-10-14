@@ -24,9 +24,9 @@ export default function Footer() {
         {/* Logo + Description */}
         <div className="">
           <img
-            src="/footer.png" // Replace with your actual logo path
+            src="/footer 1.png" // Replace with your actual logo path
             alt="PPS Group Logo"
-            className="h-30 w-80 object-contain"
+            className="h-15 mb-5 w-80 object-contain"
           />
           <p className="leading-relaxed text-gray-400 max-w-xs">
             PPS Group delivers precision performance solutions - driving
