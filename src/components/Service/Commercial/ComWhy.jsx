@@ -67,7 +67,7 @@ export default function ComWhyChooseSection() {
     ];
 
     return (
-        <section id="services" className="py-20 md:py-32 bg-muted/30">
+        <section id="services" className="py-1 bg-muted/30">
             <div className="container max-w-6xl mx-auto">
                 {/* Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">

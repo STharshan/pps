@@ -54,11 +54,11 @@ export default function TestimonialsSection() {
   const current = testimonials[currentIndex];
 
   return (
-    <section className="py-20 md:py-32 bg-[#0094D9]/5">
+    <section className="py-10 bg-[#0094D9]/5">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9]">
             What Our Clients Say
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-300 text-pretty">

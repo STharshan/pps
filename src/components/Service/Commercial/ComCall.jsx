@@ -2,7 +2,7 @@ import { HashLink } from "react-router-hash-link";
 
 export default function CallToActionSection() {
   return (
-    <section id="get" className="py-20 bg-gradient-to-br from-[#0094D9] to-[#0094D9]/80 text-white">
+    <section id="get" className="py-13 bg-gradient-to-br from-[#0094D9] to-[#0094D9]/80 text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Heading */}

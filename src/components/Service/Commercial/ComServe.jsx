@@ -99,7 +99,7 @@ export default function IndustriesSection() {
   return (
     <section
       id="industries"
-      className="py-20 md:py-32 bg-white dark:bg-neutral-950 transition-colors"
+      className="py-15 bg-white dark:bg-neutral-950 transition-colors"
     >
       <div className="container max-w-6xl mx-auto">
         {/* Header */}

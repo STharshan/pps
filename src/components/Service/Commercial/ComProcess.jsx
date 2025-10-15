@@ -44,14 +44,14 @@ export default function ProcessSection() {
   return (
     <section
       id="process"
-      className="bg-[#E8F6FD]/40 dark:bg-[#0C1416] relative overflow-hidden px-6 lg:px-12"
+      className="bg-[#E8F6FD]/40 dark:bg-[#0C1416] relative overflow-hidden py-10 px-6 lg:px-12"
     >
 
 
       <div className="container max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1C3B45] dark:text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9] dark:text-white">
             Our Proven Process
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400">

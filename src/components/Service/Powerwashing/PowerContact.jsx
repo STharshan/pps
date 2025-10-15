@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link'
 const PowerContact = () => {
     return (
         <div>
-            <section id='get' class="py-24 bg-gradient-to-br from-[#0094D9] to-blue-800 text-white">
+            <section id='get' class="py-10 bg-gradient-to-br from-[#0094D9] to-blue-800 text-white">
                 <div class="container mx-auto px-4">
                     <div class="max-w-3xl mx-auto text-center">
                         <h2 class="text-4xl md:text-5xl font-bold mb-6 text-balance">Experience the Difference</h2>

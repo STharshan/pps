@@ -44,7 +44,7 @@ export default function FAQSection() {
   return (
     <section
       id="faq"
-      className="py-16 md:py-24 px-6 lg:px-12"
+      className="py-16 px-6 lg:px-12"
       style={{ backgroundColor: bgLight }}
     >
       <div className="container mx-auto">

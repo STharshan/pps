@@ -7,7 +7,7 @@ export default function GetAQuoteSection() {
   return (
     <section
       id="getquote"
-      className="py-20 lg:py-32 bg-[#0094D9] text-white relative overflow-hidden px-6 lg:px-12"
+      className="py-15 bg-[#0094D9] text-white relative overflow-hidden px-6 lg:px-12"
     >
       {/* Background Accent Circles */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>

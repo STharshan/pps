@@ -114,7 +114,7 @@ const FloorProcess = () => {
   return (
     <section
       id="industries"
-      className="py-24 px-6 md:px-12 bg-gradient-to-b from-white to-[#F8FAFC]"
+      className="py-2 px-6 md:px-12 bg-gradient-to-b from-white to-[#F8FAFC]"
     >
       <div className="max-w-6xl mx-auto">
         {/* Header */}

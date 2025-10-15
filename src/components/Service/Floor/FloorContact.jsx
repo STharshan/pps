@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 
 const ContactSection = () => {
   return (
-    <section id="get" className="py-24 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    <section id="get" className="py-10 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl md:text-5xl font-bold text-[#0094D9]">Experience the Difference</h2>

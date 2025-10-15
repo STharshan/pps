@@ -13,7 +13,7 @@ export default function CallToActionSection() {
   return (
     <section
     id="call"
-      className="py-16 md:py-24 relative overflow-hidden px-6 lg:px-12"
+      className="py-16 relative overflow-hidden px-6 lg:px-12"
       style={{ backgroundColor: brand.bg }}
     >
       {/* Gradient Background */}
