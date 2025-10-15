@@ -12,6 +12,7 @@ import Postconstructioncleaningpage from "./pages/Postconstructioncleaningpage"
 import Deepsteamcleaning from "./pages/Deepsteamcleaning"
 import Floor from './pages/Floor';
 import Powerwashing from './pages/Powerwashing';
+import Market from './pages/MArket';
 function App() {
   return (
     <Router>
@@ -25,6 +26,7 @@ function App() {
         <Route path='/power-washing' element={<Powerwashing />} />
         <Route path="/Postconstructioncleaning" element={<Postconstructioncleaningpage />} />
         <Route path="/Deepsteamcleaning" element={<Deepsteamcleaning />} />
+        <Route path="/market" element={<Market />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>

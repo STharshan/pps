@@ -19,9 +19,6 @@ export default function HeroSection() {
         muted
       ></video>
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40"></div>
-
       {/* Hero Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-4">
         {/* Title with Animation */}

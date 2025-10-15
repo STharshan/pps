@@ -24,18 +24,14 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#home" className="flex items-center">
           <img
-            src={isScrolled ? "/logo.png" : "/footer 1.png"}  // Conditionally change logo based on scroll position
+            src="/logo.png"
             alt="ARCON Logo"
             className="h-10 w-auto object-contain"
           />
         </a>
 
         {/* Desktop Menu */}
-        <nav
-          className={`hidden lg:flex space-x-10 font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2 transition-colors duration-300 ${
-            isScrolled ? "text-black" : "text-white" // Change text color based on scroll position
-          }`}
-        >
+        <nav className="hidden lg:flex space-x-10 text-black font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2">
           <Link to="/#home" className="hover:text-[#0094D9] transition">
             Home
           </Link>
