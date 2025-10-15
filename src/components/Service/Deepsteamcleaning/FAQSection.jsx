@@ -45,17 +45,17 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="py-20 md:py-32 bg-[#E6F4FB]">
+    <section id="faq" className="py-20 bg-[#E6F4FB]">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
-            style={{ color: "#1C3B45" }}
+            style={{ color: "#0094D9" }}
           >
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-[#1C3B45]/80 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Everything you need to know about our deep steam cleaning services.
           </p>
         </div>

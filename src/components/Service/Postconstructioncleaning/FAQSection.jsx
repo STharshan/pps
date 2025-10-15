@@ -40,7 +40,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="py-24 bg-[#E6F4FB]">
+    <section id="faq" className="py-8 bg-[#E6F4FB]">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">

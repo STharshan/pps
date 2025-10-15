@@ -57,13 +57,12 @@ export default function WhyChooseSection() {
   const [hovered, setHovered] = useState(null);
 
   return (
-    <section id="why-choose" className="py-24 bg-white px-6 lg:px-12">
-      <div className="max-w-7xl mx-auto">
+    <section id="why-choose" className="py-20 bg-white px-6 lg:px-12">
+      <div className="max-w-6xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-16">
           <h2
-            className="text-4xl md:text-5xl font-bold mb-4"
-            style={{ color: brand.text }}
+            className="text-4xl text-[#0094D9] md:text-5xl font-bold mb-4"
           >
             Why Choose PPS Group Inc.
           </h2>

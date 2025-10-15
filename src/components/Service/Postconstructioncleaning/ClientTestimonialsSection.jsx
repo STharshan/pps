@@ -75,13 +75,12 @@ export default function ClientTestimonialsSection() {
             <div className="space-y-6 fade-in">
               {/* Profile Info */}
               <div className="flex items-center gap-4">
-                <img
-                  src={testimonials[activeIndex].image}
-                  alt={testimonials[activeIndex].name}
-                  width={80}
-                  height={80}
-                  className="rounded-full border border-[#0094D9]/30"
-                />
+                <div className="w-16 h-16 rounded-full overflow-hidden bg-[#0094D9]/10">
+                  <img
+                    src="/tab.png"
+                    className="w-18 h-16 -mt-1 object-cover"
+                  />
+                </div>
                 <div>
                   <h3 className="text-xl font-semibold text-[#1C3B45]">
                     {testimonials[activeIndex].name}
@@ -118,11 +117,10 @@ export default function ClientTestimonialsSection() {
               <button
                 key={index}
                 onClick={() => handleManualChange(index)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  activeIndex === index
+                className={`h-2 rounded-full transition-all duration-300 ${activeIndex === index
                     ? "w-8 bg-[#0094D9]"
                     : "w-2 bg-gray-400/30"
-                }`}
+                  }`}
               ></button>
             ))}
           </div>

@@ -11,7 +11,7 @@ export default function HeroSection() {
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-[#0094D9]/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
       </div>
 
-      <div className="max-w-7xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* ===== Left Text Section ===== */}
           <div className="text-center lg:text-left z-10">

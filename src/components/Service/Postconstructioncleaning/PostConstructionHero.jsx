@@ -10,7 +10,7 @@ export default function PostConstructionHero() {
 
   return (
     <section
-      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+      className="relative h-[120vh] flex items-center justify-center overflow-hidden"
       style={{ paddingTop: "6rem" }} // ✅ Prevents navbar overlap
     >
       {/* Background Image */}
@@ -25,7 +25,7 @@ export default function PostConstructionHero() {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-6 lg:px-12 relative z-10">
+      <div className="container max-w-6xl mx-auto px-6 lg:px-12 relative z-10">
         <div className="max-w-5xl mx-auto text-center text-white space-y-8">
           {/* Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">

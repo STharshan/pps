@@ -53,34 +53,24 @@ const PowerTestimonials = () => {
   };
 
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-10 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">What Our Clients Say</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-[#0094D9]">What Our Clients Say</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">
             Real results from satisfied customers across the GTA
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border shadow-sm p-8 md:p-12 relative overflow-hidden">
+          <div className="bg-card border-gray-200 text-card-foreground flex flex-col gap-6 rounded-xl border shadow-sm p-8 md:p-12 relative overflow-hidden">
             {/* Testimonial content */}
             <div className="flex flex-col items-center text-center">
               <div className="relative w-20 h-20 rounded-full overflow-hidden mb-6">
-                <img
-                  alt={testimonials[activeIndex].name}
-                  loading="lazy"
-                  decoding="async"
-                  className="object-cover"
-                  src="/logo.png"
-                  style={{
-                    position: "absolute",
-                    height: "100%",
-                    width: "100%",
-                    inset: 0,
-                    color: "transparent",
-                  }}
-                />
+                  <img
+                    src="/tab.png"
+                    className="w-20 h-20 -mt-2 object-cover"
+                  />
               </div>
               <div className="flex gap-1 mb-4">
                 {/* Star rating */}
@@ -96,9 +86,8 @@ const PowerTestimonials = () => {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    className={`lucide lucide-star h-5 w-5 ${
-                      index < 5 ? "fill-yellow-400 text-yellow-400" : ""
-                    }`}
+                    className={`lucide lucide-star h-5 w-5 ${index < 5 ? "fill-yellow-400 text-yellow-400" : ""
+                      }`}
                   >
                     <path d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"></path>
                   </svg>
@@ -120,9 +109,8 @@ const PowerTestimonials = () => {
               {testimonials.map((_, index) => (
                 <button
                   key={index}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    activeIndex === index ? "w-8 bg-[#0094D9]" : "w-2 bg-muted-foreground/30"
-                  }`}
+                  className={`h-2 rounded-full transition-all duration-300 ${activeIndex === index ? "w-8 bg-[#0094D9]" : "w-2 bg-muted-foreground/30"
+                    }`}
                   onClick={() => setActiveIndex(index)}
                   aria-label={`Go to testimonial ${index + 1}`}
                 ></button>

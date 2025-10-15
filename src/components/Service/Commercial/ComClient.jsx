@@ -78,11 +78,10 @@ export default function TestimonialsSection() {
             <div className="relative z-10">
               <div className="flex items-center gap-6 mb-6">
                 <div className="relative h-20 w-20 rounded-full overflow-hidden flex-shrink-0">
-                  <img
-                    alt={current.name}
-                    src={current.image}
-                    className="object-cover w-full h-full"
-                  />
+                   <img
+                src="/tab.png"
+                className="w-22 h-20 -mt-2 object-cover"
+              />
                 </div>
                 <div className="flex-1">
                   <h3 className="font-semibold text-xl">{current.name}</h3>

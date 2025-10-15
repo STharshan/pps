@@ -69,7 +69,7 @@ export default function FourStepProcess() {
             <div key={step.id} className="relative h-full">
               {/* Arrow Connector */}
               {index < steps.length - 1 && (
-                <div className="hidden lg:block absolute top-1/3 -right-3 z-10">
+                <div className="hidden lg:block absolute top-1/3 -right-6 z-10">
                   <ArrowRight className="w-6 h-6 text-[#0094D9] animate-pulse" />
                 </div>
               )}

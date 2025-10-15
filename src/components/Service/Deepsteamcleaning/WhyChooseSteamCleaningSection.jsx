@@ -10,7 +10,7 @@ import {
 } from "lucide-react";
 
 export default function WhyChooseSteamCleaningSection() {
-  const brand = "#0094D9";
+  const brand = "white";
 
   const cards = [
     {
@@ -58,17 +58,17 @@ export default function WhyChooseSteamCleaningSection() {
   ];
 
   return (
-    <section id="why-choose" className="py-20 md:py-32 bg-[#E6F4FB]">
+    <section id="why-choose" className="py-10 bg-[#E6F4FB]">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
-            style={{ color: "#1C3B45" }}
+            style={{ color: "#0094D9" }}
           >
             Why Choose Steam Cleaning?
           </h2>
-          <p className="text-xl text-[#1C3B45]/80 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Experience the power of chemical-free cleaning that's safe,
             effective, and environmentally responsible.
           </p>
@@ -91,7 +91,7 @@ export default function WhyChooseSteamCleaningSection() {
                 />
 
                 {/* 🔹 Gradient + Icon (fades out when hovered) */}
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0094D9]/20 to-[#0094D9]/10 flex items-center justify-center transition-all duration-700 ease-in-out group-hover:opacity-0">
+                <div className="absolute inset-0 bg-[#0094D9] flex items-center justify-center transition-all duration-700 ease-in-out group-hover:opacity-0">
                   <div className="text-[#0094D9] transition-transform duration-500 group-hover:scale-110">
                     {card.icon}
                   </div>

@@ -11,7 +11,7 @@ export default function RestaurantHeroSection() {
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0094D9]/10 via-white to-[#1C3B45]/5"></div>
 
-      <div className="container mx-auto relative z-10">
+      <div className="container max-w-6xl mx-auto relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-8">
@@ -23,7 +23,7 @@ export default function RestaurantHeroSection() {
             </div>
 
             {/* Title */}
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-[#1C3B45]">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-black">
               Hygiene That Protects Your{" "}
               <span className="text-[#0094D9]">Reputation</span>
             </h1>

@@ -59,18 +59,18 @@ export default function IdealAreasMaterialsSection() {
         <div className="text-center mb-16">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
-            style={{ color: "#1C3B45" }}
+            style={{ color: "#0094D9" }}
           >
             Ideal for These Areas &amp; Materials
           </h2>
-          <p className="text-xl text-[#1C3B45]/80 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Our steam cleaning service is versatile and effective across a wide
             range of applications.
           </p>
         </div>
 
         {/* Cards */}
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        <div className="grid  gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
           {cards.map((card, index) => {
             const isOpen = openIndex === index;
 

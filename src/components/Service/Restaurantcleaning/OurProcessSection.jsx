@@ -29,7 +29,7 @@ export default function OurProcessSection() {
       description:
         "We create a flexible cleaning schedule that works around your operating hours, with overnight and off-hour options available.",
       icon: <Calendar className="h-6 w-6" />,
-      image: "/restaurant-cleaning-staff-setting-schedule.jpg",
+      image: "/img.png",
     },
     {
       id: 3,
@@ -38,7 +38,7 @@ export default function OurProcessSection() {
       description:
         "Our certified team performs comprehensive cleaning using food-safe products, covering every surface from kitchen to dining areas.",
       icon: <Sparkles className="h-6 w-6" />,
-      image: "/restaurant-deep-cleaning-kitchen-team.jpg",
+      image: "/img.png",
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ export default function OurProcessSection() {
       description:
         "We provide detailed cleaning reports and documentation for health inspections, with regular follow-ups to ensure continued compliance.",
       icon: <FileCheck className="h-6 w-6" />,
-      image: "/restaurant-cleaning-inspection-documentation.jpg",
+      image: "/img.png",
     },
   ];
 
@@ -59,12 +59,12 @@ export default function OurProcessSection() {
       className="py-16 md:py-24 px-6 lg:px-12"
       style={{ backgroundColor: bgLight }}
     >
-      <div className="container mx-auto">
+      <div className="container max-w-6xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: brandText }}
+            className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9]"
+
           >
             Our Process
           </h2>
@@ -75,37 +75,34 @@ export default function OurProcessSection() {
         </div>
 
         {/* Grid */}
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+        <div className="grid lg:grid-cols-2 max-w-6xl mx-auto gap-8 items-center">
           {/* Left Steps */}
           <div className="space-y-4">
             {steps.map((step, index) => (
               <div
                 key={step.id}
                 onClick={() => setActiveStep(index)}
-                className={`flex flex-col gap-6 rounded-xl border p-6 cursor-pointer transition-all duration-300 shadow-sm ${
-                  activeStep === index
+                className={`flex flex-col gap-6 rounded-xl border p-6 cursor-pointer transition-all duration-300 shadow-sm ${activeStep === index
                     ? "scale-105 bg-[#0094D9]/10 border-[#0094D9] shadow-lg"
                     : "hover:bg-gray-100 border-gray-200 bg-white"
-                }`}
+                  }`}
               >
                 <div className="flex items-start gap-4">
                   <div
-                    className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${
-                      activeStep === index
+                    className={`w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${activeStep === index
                         ? "bg-[#0094D9] text-white"
                         : "bg-gray-200 text-gray-500"
-                    }`}
+                      }`}
                   >
                     {step.icon}
                   </div>
                   <div className="flex-1">
                     <div className="flex items-center gap-2 mb-2">
                       <span
-                        className={`text-sm font-semibold ${
-                          activeStep === index
+                        className={`text-sm font-semibold ${activeStep === index
                             ? "text-[#0094D9]"
                             : "text-gray-500"
-                        }`}
+                          }`}
                       >
                         {step.subtitle}
                       </span>

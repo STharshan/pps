@@ -76,9 +76,9 @@ export default function TestimonialsSection() {
           <div className="flex flex-col items-center gap-3">
             <div className="w-16 h-16 rounded-full overflow-hidden bg-[#0094D9]/10">
               <img
-                src={active.img}
+                src="/tab.png"
                 alt={active.name}
-                className="w-full h-full object-cover"
+                className="w-18 h-16 -mt-1 object-cover"
               />
             </div>
             <div>
@@ -100,11 +100,10 @@ export default function TestimonialsSection() {
               key={t.id}
               onClick={() => setActive(t)}
               aria-label={`View testimonial ${t.id}`}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                active.id === t.id
+              className={`h-2 rounded-full transition-all duration-300 ${active.id === t.id
                   ? "w-8 bg-[#0094D9]"
                   : "w-2 bg-[#0094D9]/40 hover:bg-[#0094D9]/70"
-              }`}
+                }`}
             ></button>
           ))}
         </div>
@@ -115,11 +114,10 @@ export default function TestimonialsSection() {
             <div
               key={t.id}
               onClick={() => setActive(t)}
-              className={`rounded-xl border p-6 bg-white dark:bg-[#111A1D] cursor-pointer transition-all duration-300 shadow-sm hover:shadow-md ${
-                active.id === t.id
+              className={`rounded-xl border p-6 bg-white dark:bg-[#111A1D] cursor-pointer transition-all duration-300 shadow-sm hover:shadow-md ${active.id === t.id
                   ? "border-2 border-[#0094D9] scale-105"
                   : "border-gray-200 dark:border-gray-700"
-              }`}
+                }`}
             >
               <div className="flex items-center gap-1 mb-3">
                 {[...Array(5)].map((_, i) => (
@@ -138,9 +136,9 @@ export default function TestimonialsSection() {
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-full overflow-hidden bg-[#0094D9]/10">
                   <img
-                    src={t.img}
-                    alt={t.name}
-                    className="w-full h-full object-cover"
+                    src="/tab.png"
+                    alt={active.name}
+                    className="w-10 h-10 -mt-1 object-cover"
                   />
                 </div>
                 <div>

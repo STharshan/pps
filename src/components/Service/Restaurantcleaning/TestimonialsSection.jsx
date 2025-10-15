@@ -50,8 +50,7 @@ export default function TestimonialsSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: brandText }}
+            className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9]"
           >
             What Our Clients Say
           </h2>
@@ -64,11 +63,12 @@ export default function TestimonialsSection() {
         <div className="max-w-4xl mx-auto relative">
           <div className="bg-white flex flex-col gap-6 rounded-xl border border-gray-200 shadow-sm p-8 md:p-12 transition-all duration-300">
             <div className="flex flex-col md:flex-row gap-6 items-center md:items-start">
+             <div className="w-16 h-16 rounded-full overflow-hidden bg-[#0094D9]/10">
               <img
-                src={t.image}
-                alt={t.name}
-                className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+                src="/tab.png"
+                className="w-18 h-16 -mt-1 object-cover"
               />
+            </div>
               <div className="flex-1 text-center md:text-left">
                 {/* Stars */}
                 <div className="flex gap-1 mb-4 justify-center md:justify-start">

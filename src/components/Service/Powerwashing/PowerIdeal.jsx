@@ -52,7 +52,7 @@ const IdealSurfaces = () => {
   };
 
   return (
-    <section className="py-24 bg-muted/30">
+    <section className="py-10 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0094D9]">
@@ -66,7 +66,7 @@ const IdealSurfaces = () => {
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg"
+              className="bg-card border-gray-200 text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg"
             >
               <button
                 className="w-full p-6 text-left flex items-center justify-between"

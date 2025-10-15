@@ -90,8 +90,7 @@ export default function AreasWeCleanSection() {
     {
       id: 7,
       title: "Exhaust Fans, Sinks & Service Counters",
-      description:
-        "Detailed cleaning of high-use areas and equipment.",
+      description: "Detailed cleaning of high-use areas and equipment.",
       image: "/restaurant-service-counter-and-sink-area-professio.jpg",
       details: [
         "Exhaust fan cleaning and maintenance",
@@ -104,10 +103,10 @@ export default function AreasWeCleanSection() {
 
   return (
     <section id="areas" className="py-16 md:py-24 bg-[#F9FBFD] px-6 lg:px-12">
-      <div className="container mx-auto">
+      <div className="container max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1C3B45]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9]">
             Areas We Clean
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -117,12 +116,12 @@ export default function AreasWeCleanSection() {
           </p>
         </div>
 
-        {/* Cards Grid */}
-        <div className="grid md:grid-cols-2 gap-6">
+        {/* ✅ Cards Container - FIXED VERSION */}
+        <div className="flex flex-wrap justify-center gap-6">
           {areas.map((area, index) => (
             <div
               key={area.id}
-              className="bg-white flex flex-col gap-6 rounded-xl border border-gray-200 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg"
+              className="bg-white flex flex-col gap-6 rounded-xl border border-gray-200 shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg w-full md:w-[48%] max-w-[550px]"
             >
               {/* Image */}
               <div className="relative h-48 overflow-hidden">
@@ -160,10 +159,12 @@ export default function AreasWeCleanSection() {
                 {/* Collapsible Details */}
                 <div
                   className={`overflow-hidden transition-all duration-500 ${
-                    openIndex === index ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+                    openIndex === index
+                      ? "max-h-[500px] opacity-100 mt-4"
+                      : "max-h-0 opacity-0"
                   }`}
                 >
-                  <ul className="space-y-2 mt-4">
+                  <ul className="space-y-2">
                     {area.details.map((detail, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <div className="w-1.5 h-1.5 rounded-full bg-[#0094D9] mt-2 flex-shrink-0"></div>

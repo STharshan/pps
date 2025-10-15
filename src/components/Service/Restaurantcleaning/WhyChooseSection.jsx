@@ -69,7 +69,7 @@ export default function WhyChooseSection() {
       {/* Background gradient for subtle depth */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#0094D9]/10 via-white to-[#1C3B45]/5"></div>
 
-      <div className="container mx-auto relative z-10">
+      <div className="container max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1C3B45]">

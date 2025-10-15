@@ -37,7 +37,7 @@ export default function WhyChooseUs() {
 
   return (
     <section className="bg-white py-16 px-6 md:px-12 lg:px-20 font-poppins" id="whychooseus">
-      <div className="max-w-6xl mx-auto text-center mb-15 flex gap-15">
+      <div className="max-w-6xl mx-auto text-center mb-15 lg:flex grid lg:gap-15">
         <h2 className="text-[#0094D9] font-bold text-lg tracking-widest uppercase mb-2" data-aos="fade-up">
           • Why Choose Us
         </h2>

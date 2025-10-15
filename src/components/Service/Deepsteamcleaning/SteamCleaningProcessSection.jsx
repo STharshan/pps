@@ -44,13 +44,13 @@ export default function SteamCleaningProcessSection() {
   const [activeStep, setActiveStep] = useState(2); // Default highlight Step 3
 
   return (
-    <section id="process" className="py-20 md:py-32 bg-[#E6F4FB]">
+    <section id="process" className="py-10 bg-[#E6F4FB]">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
-            style={{ color: "#1C3B45" }}
+            style={{ color: "#0094D9" }}
           >
             Our Steam Cleaning Process
           </h2>

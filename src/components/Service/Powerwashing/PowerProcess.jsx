@@ -16,25 +16,24 @@ const PowerWashingProcess = () => {
   };
 
   return (
-    <section className="py-24 bg-background">
+    <section className="py-10 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance">Our Power Washing Process</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-[#0094D9]">Our Power Washing Process</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-pretty">A systematic approach to delivering spotless results</p>
         </div>
 
         {/* Process Steps Buttons */}
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
+          <div className="flex flex-wrap  justify-center gap-4 mb-12">
             {steps.map((step) => (
               <button
                 key={step.id}
                 onClick={() => handleStepClick(step.id)}
-                className={`justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all flex items-center gap-2 h-9 px-4 py-2 ${
-                  activeStep >= step.id
+                className={`justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all flex items-center gap-2 h-9 px-4 py-2 ${activeStep >= step.id
                     ? "bg-[#0094D9] text-primary-foreground  hover:bg-primary/90"
                     : "bg-gray-100 text-muted-foreground border border-gray-200 hover:bg-accent"
-                }`}
+                  }`}
               >
                 <span className="font-bold">{step.id}</span>
                 <span className="hidden sm:inline">{step.label}</span>
@@ -43,7 +42,7 @@ const PowerWashingProcess = () => {
           </div>
 
           {/* Step Card */}
-          <div className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border shadow-sm p-8 md:p-12">
+          <div className="bg-card text-card-foreground border-gray-200 flex flex-col gap-6 rounded-xl border shadow-sm p-8 md:p-12">
             <div className="flex flex-col md:flex-row items-center gap-8">
               <div className="flex-shrink-0">
                 <div className="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center">

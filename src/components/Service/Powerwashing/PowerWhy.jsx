@@ -53,7 +53,7 @@ const cardData = [
 
 const WhyPowerWashingMatters = () => {
   return (
-    <section className="py-24 bg-background">
+    <section className="py-10 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0094D9]">
@@ -63,11 +63,11 @@ const WhyPowerWashingMatters = () => {
             Professional power washing delivers results that go beyond surface-level cleaning
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid max-w-6xl mx-auto  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm group relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl"
+              className="bg-card text-card-foreground border-gray-200 flex flex-col gap-6 rounded-xl border py-6 shadow-sm group relative overflow-hidden cursor-pointer transition-all duration-300 hover:shadow-xl"
             >
               <div className="aspect-video relative overflow-hidden group-hover:bg-transparent">
                 <img
@@ -84,7 +84,7 @@ const WhyPowerWashingMatters = () => {
                     color: "transparent",
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#0094D9] to-blue-700 transition-opacity duration-500 opacity-100 group-hover:opacity-0"></div>
+                <div className="absolute inset-0 bg-[#0094D9] transition-opacity duration-500 opacity-100 group-hover:opacity-0"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                   {card.icon}
                 </div>

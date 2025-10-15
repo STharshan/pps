@@ -44,14 +44,14 @@ export default function OurProcessSection() {
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#0094D9]">
             Our Process
           </h2>
-          <p className="text-xl text-[#0094D9]/80 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-black max-w-3xl mx-auto leading-relaxed">
             A systematic approach to transforming construction sites into
             pristine spaces
           </p>
         </div>
 
         {/* Process Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid max-w-6xl mx-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
             <div
               key={index}

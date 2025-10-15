@@ -6,7 +6,7 @@ export default function ExperienceTheDifferenceSection() {
   const brand = "#0094D9";
 
   return (
-    <section className="py-20 md:py-32">
+    <section className="py-20">
       <div className="container mx-auto px-6 lg:px-12">
         <div
           className="flex flex-col gap-6 rounded-xl border shadow-sm relative overflow-hidden text-white bg-gradient-to-br from-[#0094D9] to-[#0094D9]/80"

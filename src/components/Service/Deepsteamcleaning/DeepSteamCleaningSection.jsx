@@ -18,7 +18,6 @@ export default function DeepSteamCleaningSection() {
             <div
               className="inline-flex items-center rounded-full border px-4 py-1.5 text-sm font-medium"
               style={{
-                color: brand.primary,
                 backgroundColor: `${brand.primary}1A`, // ~10% opacity
                 borderColor: `${brand.primary}33`, // ~20% opacity
               }}
@@ -29,8 +28,7 @@ export default function DeepSteamCleaningSection() {
 
             {/* Headline */}
             <h1
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight"
-              style={{ color: brand.text }}
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-[#0094D9] font-bold tracking-tight leading-tight"
             >
               Deep &amp; Steam Cleaning
             </h1>

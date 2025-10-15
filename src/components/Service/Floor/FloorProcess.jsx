@@ -116,7 +116,7 @@ const FloorProcess = () => {
       id="process"
       className="py-24 px-6 md:px-12 bg-gradient-to-b from-white to-[#F8FAFC]"
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#0094D9]">

@@ -50,17 +50,17 @@ export default function ClientTestimonialsSection() {
   const activeTestimonial = testimonials[activeIndex];
 
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-15 bg-white">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
-            style={{ color: "#1C3B45" }}
+            style={{ color: "#0094D9" }}
           >
             What Our Clients Say
           </h2>
-          <p className="text-xl text-[#1C3B45]/80 max-w-3xl mx-auto">
+          <p className="text-xl text-black max-w-3xl mx-auto">
             Trusted by businesses across the GTA for chemical-free, deep
             cleaning excellence.
           </p>
@@ -73,9 +73,8 @@ export default function ClientTestimonialsSection() {
               {/* Profile Image */}
               <div className="relative w-24 h-24 rounded-full overflow-hidden flex-shrink-0">
                 <img
-                  src={activeTestimonial.image}
-                  alt={activeTestimonial.name}
-                  className="object-cover w-full h-full"
+                  src="/tab.png"
+                  className="w-24 h-24 -mt-2 object-cover"
                 />
               </div>
 
@@ -127,11 +126,10 @@ export default function ClientTestimonialsSection() {
                 <button
                   key={index}
                   onClick={() => setActiveIndex(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${
-                    activeIndex === index
+                  className={`h-2 rounded-full transition-all duration-300 ${activeIndex === index
                       ? "w-8 bg-[#0094D9]"
                       : "w-2 bg-gray-400/30"
-                  }`}
+                    }`}
                 ></button>
               ))}
             </div>
