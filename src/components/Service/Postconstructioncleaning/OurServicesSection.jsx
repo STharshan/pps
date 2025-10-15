@@ -69,7 +69,7 @@ export default function OurServicesSection() {
   };
 
   return (
-    <section className="py-24" style={{ backgroundColor: brand.primary }}>
+    <section id="industries" className="py-24" style={{ backgroundColor: brand.primary }}>
       <div className="container mx-auto px-6 lg:px-12">
         {/* Section Header */}
         <div className="text-center mb-16 text-white">

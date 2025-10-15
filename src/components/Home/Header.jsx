@@ -26,7 +26,7 @@ export default function HeroSection() {
       <div className="relative z-10 flex flex-col items-center justify-center text-center text-white h-full px-4">
         {/* Title with Animation */}
         <h1
-          className="text-7xl font-bold tracking-widest mb-2 text-[#0094D9]"
+          className="text-[85px] font-bold tracking-widest mb-2 text-[#0094D9]"
           data-aos="fade-up"
         >
           PPS GROUP

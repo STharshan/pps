@@ -53,13 +53,13 @@ export default function IdealAreasMaterialsSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="py-20 md:py-32 bg-white">
+    <section className="py-20 md:py-32 bg-white" id="industries">
       <div className="container mx-auto px-6 lg:px-12">
         {/* Header */}
         <div className="text-center mb-16">
           <h2
             className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
-            style={{ color: "#0094D9" }}
+            style={{ color: brand }}
           >
             Ideal for These Areas &amp; Materials
           </h2>
@@ -69,18 +69,16 @@ export default function IdealAreasMaterialsSection() {
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid  gap-6 md:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+        {/* ✅ Fixed Layout - Flexbox (auto centers last row) */}
+        <div className="flex flex-wrap justify-center gap-6 max-w-6xl mx-auto">
           {cards.map((card, index) => {
             const isOpen = openIndex === index;
 
             return (
               <div
                 key={index}
-                className="bg-white text-[#1C3B45] flex flex-col rounded-xl border border-[#0094D9]/20 py-6 shadow-sm group cursor-pointer transition-all duration-300 hover:shadow-xl overflow-hidden"
-                onClick={() =>
-                  setOpenIndex(isOpen ? null : index)
-                }
+                className="bg-white text-[#1C3B45] flex flex-col rounded-xl border border-[#0094D9]/20 py-6 shadow-sm group cursor-pointer transition-all duration-300 hover:shadow-xl overflow-hidden w-full sm:w-[90%] md:w-[45%] lg:w-[30%] max-w-[400px]"
+                onClick={() => setOpenIndex(isOpen ? null : index)}
               >
                 <div className="p-6">
                   {/* Icon + Chevron */}

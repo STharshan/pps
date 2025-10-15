@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { ArrowRight } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 export default function PostConstructionHero() {
   const brand = {
@@ -41,21 +42,19 @@ export default function PostConstructionHero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-delay-2">
             {/* Primary CTA */}
-            <button
-              onClick={() => (window.location.href = "#contact")}
-              className="inline-flex items-center justify-center gap-2 font-medium transition-all bg-[#0094D9] text-white hover:bg-[#0094D9]/90 h-12 rounded-md px-8 py-3 text-lg shadow-lg"
-            >
-              Get a Free Quote
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
+            <HashLink to="#get" className="inline-block">
 
-            {/* Secondary CTA */}
-            <button
-              onClick={() => (window.location.href = "#services")}
-              className="inline-flex items-center justify-center gap-2 font-medium transition-all border border-white/30 bg-white/10 text-white hover:bg-white/20 backdrop-blur-sm h-12 rounded-md px-8 py-3 text-lg"
-            >
-              View Our Services
-            </button>
+              <button className="inline-flex items-center justify-center gap-2 bg-[#0094D9] hover:bg-[#36AFE7] text-white text-base px-8 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition-all group">
+                Get Free Quote
+                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </button>
+            </HashLink>
+
+            <HashLink to="#industries" className="inline-block">
+              <button className="inline-flex items-center justify-center gap-2 border border-[#0094D9]/40 text-[#0094D9] hover:bg-[#0094D9]/10 text-base px-8 py-3 rounded-md font-medium transition-all">
+                View Services
+              </button>
+            </HashLink>
           </div>
 
           {/* Stats */}

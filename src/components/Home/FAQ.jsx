@@ -50,11 +50,12 @@ export default function CivitasFAQ() {
             <h1 className="text-4xl mt-5 font-serif font-bold text-black mb-8 leading-tight">
               Your questions, answered effortlessly with us
             </h1>
-
-            <button className="inline-flex items-center justify-center gap-2 w-fit bg-[#0094D9] hover:bg-[#0980b8] text-slate-900 font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-105 active:shadow-xl group">
-              <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform" />
-              <span>Book a call</span>
-            </button>
+            <a href="tel:(416) 471-4465">
+              <button className="inline-flex items-center justify-center text-white gap-2 w-fit bg-[#0094D9] hover:bg-[#0980b8] font-semibold py-3 px-6 sm:py-4 sm:px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 active:scale-105 active:shadow-xl group">
+                <Phone className="w-5 h-5 group-hover:rotate-12  transition-transform" />
+                <span>Book a call</span>
+              </button>
+            </a>
           </div>
 
           {/* Right Section - FAQ Accordion */}
@@ -73,17 +74,15 @@ export default function CivitasFAQ() {
                     {faq.question}
                   </h3>
                   <ChevronDown
-                    className={`w-5 h-5 flex-shrink-0 text-slate-600 transition-transform duration-300 ${
-                      expanded === index ? "rotate-180" : ""
-                    }`}
+                    className={`w-5 h-5 flex-shrink-0 text-slate-600 transition-transform duration-300 ${expanded === index ? "rotate-180" : ""
+                      }`}
                   />
                 </button>
 
                 {/* Expandable Answer */}
                 <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    expanded === index ? "max-h-96" : "max-h-0"
-                  }`}
+                  className={`overflow-hidden transition-all duration-300 ${expanded === index ? "max-h-96" : "max-h-0"
+                    }`}
                 >
                   <div className="px-6 py-4 sm:py-5 bg-blue-50/30 border-t border-slate-100">
                     <p className="text-slate-700 text-sm sm:text-base leading-relaxed">
