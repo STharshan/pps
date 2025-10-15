@@ -34,7 +34,7 @@ export default function HeroSection() {
 
         {/* Subtitle with Animation */}
         <h2
-          className="text-xl font-bold uppercase mt-5 mb-6 text-black"
+          className="text-xl font-bold uppercase mt-5 mb-6 text-white"
           data-aos="fade-up"
           data-aos-delay="200"
         >

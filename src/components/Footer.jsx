@@ -20,7 +20,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-[#0e0e0e] text-gray-300 border-t border-gray-800">
+    <footer className="bg-black text-gray-300 border-t border-gray-800">
       {/* === TOP SECTION === */}
       <div className="max-w-6xl mx-auto px-6 md:px-12 py-14 grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 items-start">
         {/* Logo + Description */}
