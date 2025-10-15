@@ -45,7 +45,7 @@ export default function TestimonialsSection() {
   const t = testimonials[current];
 
   return (
-    <section className="py-16 md:py-24 px-6 lg:px-12 bg-[#F9FBFD]">
+    <section className="py-1 px-6 lg:px-12 bg-[#F9FBFD]">
       <div className="container mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">

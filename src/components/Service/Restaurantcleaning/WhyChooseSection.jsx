@@ -72,7 +72,7 @@ export default function WhyChooseSection() {
       <div className="container max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#1C3B45]">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9]">
             Why Choose PPS Group
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">

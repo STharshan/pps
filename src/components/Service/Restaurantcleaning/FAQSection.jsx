@@ -51,8 +51,7 @@ export default function FAQSection() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2
-            className="text-3xl md:text-4xl font-bold mb-4"
-            style={{ color: brandText }}
+            className="text-3xl md:text-4xl font-bold mb-4 text-[#0094D9]"
           >
             Frequently Asked Questions
           </h2>
@@ -71,10 +70,10 @@ export default function FAQSection() {
               {/* Button */}
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full p-6 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors"
+                className="w-full p-6 text-left flex items-center hover:text-[#0094D9] justify-between gap-4 hover:bg-gray-50 transition-colors"
               >
                 <span
-                  className="font-semibold text-lg"
+                  className="font-semibold text-lg "
                   style={{ color: brandText }}
                 >
                   {faq.question}
