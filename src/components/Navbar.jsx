@@ -106,7 +106,10 @@ export default function Navbar() {
               </div>
             )}
           </div>
-
+           <Link to="/PPS-Digtal" className="hover:text-[#0094D9] transition">
+            PPS Digtal
+          </Link>
+          
           <Link to="/#testimonials" className="hover:text-[#0094D9] transition">
             Client
           </Link>
@@ -164,6 +167,9 @@ export default function Navbar() {
             </RouterLink>
           </div>
         </details>
+          <Link to="/PPS-Digtal" className="hover:text-[#0094D9] transition">
+            PPS Digtal
+          </Link>
 
         <Link to="/#testimonials" onClick={() => setIsOpen(false)}>
           Client

@@ -74,7 +74,7 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <section id="features" className="py-24 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="features" className="py-15 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto max-w-6xl">
         {/* Header */}
         <div className="text-center space-y-4 mb-16">

@@ -6,7 +6,7 @@ export default function DemoCTASection() {
     const brand = "#0094D9"; // primary brand blue
 
     return (
-        <section className="py-10 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <section className="py-5 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
             <div className="container mx-auto max-w-6xl ">
                 {/* Card */}
                 <div className="relative flex flex-col gap-6 py-1 bg-[#0094D9] rounded-xl shadow-lg overflow-hidden border-0 text-white">

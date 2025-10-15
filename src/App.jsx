@@ -26,7 +26,7 @@ function App() {
         <Route path='/power-washing' element={<Powerwashing />} />
         <Route path="/Postconstructioncleaning" element={<Postconstructioncleaningpage />} />
         <Route path="/Deepsteamcleaning" element={<Deepsteamcleaning />} />
-        <Route path="/market" element={<Market />} />
+        <Route path="/PPS-Digtal" element={<Market />} />
         <Route path="/terms-conditions" element={<TermsConditions />} />
         <Route path="/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
