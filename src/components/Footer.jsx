@@ -94,7 +94,7 @@ export default function Footer() {
           <span>
             Powered by{" "}
             <a
-              href="#"
+              href="https://www.ansely.co.uk/"
               className="text-[#00AEEF] hover:underline font-medium"
             >
               Ansely
