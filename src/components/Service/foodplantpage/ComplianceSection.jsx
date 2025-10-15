@@ -47,7 +47,7 @@ export default function ComplianceSection() {
   return (
     <section
       id="compliance"
-      className="py-20 lg:py-32 bg-white relative overflow-hidden px-6 sm:px-8 lg:px-12"
+      className="py-20 bg-white relative overflow-hidden px-6 sm:px-8 lg:px-12"
     >
       {/* Background Circles */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#0094D9]/10 rounded-full blur-3xl"></div>

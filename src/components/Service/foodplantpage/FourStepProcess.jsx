@@ -43,7 +43,7 @@ export default function FourStepProcess() {
   return (
     <section
       id="process"
-      className="py-20 lg:py-32 bg-[#E8F6FD]/40 relative overflow-hidden px-6 sm:px-8 lg:px-12"
+      className="py-10 bg-[#E8F6FD]/40 scroll-m-10 relative overflow-hidden px-6 sm:px-8 lg:px-12"
     >
       {/* Background Accent Circles */}
       <div className="absolute inset-0 opacity-30">

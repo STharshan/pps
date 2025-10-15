@@ -2,6 +2,7 @@
 import React from "react";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import { MdOutlineStarRate } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
 
 export default function FloorHeroSection() {
   return (
@@ -24,7 +25,7 @@ export default function FloorHeroSection() {
 
             {/* Main Heading */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 leading-tight">
-             Floor Restoration That {" "}
+              Floor Restoration That {" "}
               <span className="text-[#0094D9]">Brings Back the Shine</span>
             </h1>
 
@@ -59,14 +60,19 @@ export default function FloorHeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <button className="inline-flex items-center justify-center gap-2 bg-[#0094D9] hover:bg-[#36AFE7] text-white text-base px-8 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition-all group">
-                Get Free Quote
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
+              <HashLink to="#get" className="inline-block">
 
-              <button className="inline-flex items-center justify-center gap-2 border border-[#0094D9]/40 text-[#0094D9] hover:bg-[#0094D9]/10 text-base px-8 py-3 rounded-md font-medium transition-all">
-                View Services
-              </button>
+                <button className="inline-flex items-center justify-center gap-2 bg-[#0094D9] hover:bg-[#36AFE7] text-white text-base px-8 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition-all group">
+                  Get Free Quote
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </HashLink>
+
+              <HashLink to="#industries" className="inline-block">
+                <button className="inline-flex items-center justify-center gap-2 border border-[#0094D9]/40 text-[#0094D9] hover:bg-[#0094D9]/10 text-base px-8 py-3 rounded-md font-medium transition-all">
+                  View Services
+                </button>
+              </HashLink>
             </div>
           </div>
 
@@ -85,14 +91,14 @@ export default function FloorHeroSection() {
             <div className="absolute -bottom-6 -left-6 bg-white border-2 border-[#0094D9] rounded-xl p-6 shadow-xl">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-[#0094D9]/10 flex items-center justify-center">
-                  <MdOutlineStarRate  className="w-6 h-6 text-[#0094D9]" />
+                  <MdOutlineStarRate className="w-6 h-6 text-[#0094D9]" />
                 </div>
                 <div>
                   <div className="font-bold text-lg text-gray-900">
-                   The PPS Promise
+                    The PPS Promise
                   </div>
                   <div className="text-sm text-gray-600">
-                   Perfection in every shine
+                    Perfection in every shine
                   </div>
                 </div>
               </div>

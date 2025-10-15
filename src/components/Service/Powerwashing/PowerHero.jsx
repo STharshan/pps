@@ -1,5 +1,6 @@
 import React from 'react';
 import { Droplet, Shield, Sparkles } from 'lucide-react'; // Updated imports
+import { HashLink } from 'react-router-hash-link';
 
 const HeroSection = () => {
   return (
@@ -31,18 +32,22 @@ const HeroSection = () => {
             Transform your property with high-pressure cleaning that removes years of dirt, grime, and buildup — safely and effectively.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+            <HashLink to="#get">
             <button
               data-slot="button"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary-foreground h-10 rounded-md px-8 py-6 bg-[#0094D9] hover:bg-[#007BB5] text-lg"
             >
               Get Free Quote
             </button>
+            </HashLink>
+            <HashLink to="#process">
             <button
               data-slot="button"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border shadow-xs hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-10 rounded-md px-8 py-6 bg-white/10 backdrop-blur-sm border-white/30 text-white hover:bg-white/20"
             >
               View Our Work
             </button>
+            </HashLink>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 border border-white/20 hover:bg-white/15 transition-all duration-300">

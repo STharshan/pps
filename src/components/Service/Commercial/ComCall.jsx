@@ -1,6 +1,8 @@
+import { HashLink } from "react-router-hash-link";
+
 export default function CallToActionSection() {
   return (
-    <section className="py-20 md:py-32 bg-gradient-to-br from-[#0094D9] to-[#0094D9]/80 text-white">
+    <section id="get" className="py-20 bg-gradient-to-br from-[#0094D9] to-[#0094D9]/80 text-white">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           {/* Heading */}
@@ -16,6 +18,8 @@ export default function CallToActionSection() {
           {/* Buttons */}
           <div className="flex flex-wrap gap-4 justify-center pt-4">
             {/* Call Button */}
+             <HashLink to="tel:(416) 471-4465">
+
             <button
               className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all
               disabled:pointer-events-none disabled:opacity-50
@@ -51,8 +55,11 @@ export default function CallToActionSection() {
                 <path d="m12 5 7 7-7 7" />
               </svg>
             </button>
+             </HashLink>
 
             {/* Email Button */}
+            
+             <HashLink to="mailto:info@ppsgroupinc.ca">
             <button
               className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-all
               border border-white/30 text-white hover:bg-white/10
@@ -73,6 +80,7 @@ export default function CallToActionSection() {
               </svg>
               Email Us
             </button>
+            </HashLink>
           </div>
 
           {/* Footer Note */}

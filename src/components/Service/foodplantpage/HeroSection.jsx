@@ -1,6 +1,8 @@
 "use client";
 import React from "react";
 import { CheckCircle, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 export default function HeroSection() {
   return (
@@ -65,14 +67,18 @@ export default function HeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <button className="inline-flex items-center justify-center gap-2 bg-[#0094D9] hover:bg-[#36AFE7] text-white text-base px-8 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition-all group">
-                Request a Quote
-                <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-
+              <HashLink smooth to="/Foodplante#getquote">
+                <button className="inline-flex items-center justify-center gap-2 bg-[#0094D9] hover:bg-[#36AFE7] text-white text-base px-8 py-3 rounded-md font-medium shadow-md hover:shadow-lg transition-all group">
+                  Request a Quote
+                  <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </HashLink>
+              
+              <HashLink smooth to="/Foodplante#process">
               <button className="inline-flex items-center justify-center gap-2 border border-[#0094D9]/40 text-[#0094D9] hover:bg-[#0094D9]/10 text-base px-8 py-3 rounded-md font-medium transition-all">
                 Learn More
               </button>
+              </HashLink>
             </div>
           </div>
 

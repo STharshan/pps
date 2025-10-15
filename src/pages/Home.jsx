@@ -7,6 +7,7 @@ import PartnersCarousel from "../components/Home/Partner"
 import ServicesSection from "../components/Home/Services"
 import TestimonialsSection from "../components/Home/Testimonail"
 import WhyChooseUs from "../components/Home/WhyChooseUs"
+import KeyPartnerSection from '../components/Primary'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <PartnersCarousel />
       <AboutSection />
       <WhyChooseUs />
+      <KeyPartnerSection />
       <ServicesSection />
       <TestimonialsSection />
       <CivitasFAQ />

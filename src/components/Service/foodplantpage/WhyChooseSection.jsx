@@ -56,7 +56,7 @@ export default function WhyChooseSection() {
   ];
 
   return (
-    <section id="why-choose" className="py-20 lg:py-32 bg-white px-6 sm:px-8 lg:px-12">
+    <section id="why-choose" className="py-10 bg-white px-6 sm:px-8 lg:px-12">
       <div className="max-w-6xl mx-auto">
         {/* ===== Header ===== */}
         <div className="max-w-3xl mx-auto text-center mb-16">

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 export default function RestaurantHeroSection() {
   return (
@@ -38,13 +39,16 @@ export default function RestaurantHeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
+              <HashLink to="#call">
               <button className="inline-flex items-center justify-center gap-2 font-medium transition-all bg-[#0094D9] text-white hover:bg-[#0094D9]/90 h-12 rounded-md px-6 text-base shadow-md">
                 Get a Free Quote
               </button>
-
+              </HashLink>
+              <HashLink to="/#areas">
               <button className="inline-flex items-center justify-center gap-2 font-medium transition-all border-2 border-[#0094D9] text-[#0094D9] hover:bg-[#0094D9]/10 h-12 rounded-md px-6 text-base">
                 View Our Services
               </button>
+              </HashLink>
             </div>
 
             {/* Features */}

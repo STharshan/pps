@@ -38,7 +38,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="py-20 lg:py-32 bg-white dark:bg-[#0C1416] relative overflow-hidden px-6 lg:px-12"
+      className="py-10 bg-white dark:bg-[#0C1416] relative overflow-hidden px-6 lg:px-12"
     >
       <div className="max-w-6xl mx-auto relative">
         {/* ---------- Header ---------- */}

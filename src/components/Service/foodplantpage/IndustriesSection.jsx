@@ -44,7 +44,7 @@ export default function IndustriesSection() {
   return (
     <section
       id="industries"
-      className="py-20 lg:py-32 bg-[#E8F6FD]/40 relative overflow-hidden px-6 sm:px-8 lg:px-12"
+      className="py-10 bg-[#E8F6FD]/40 relative overflow-hidden px-6 sm:px-8 lg:px-12"
     >
       {/* ===== Header ===== */}
       <div className="max-w-3xl mx-auto text-center mb-16">

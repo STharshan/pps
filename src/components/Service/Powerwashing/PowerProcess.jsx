@@ -16,7 +16,7 @@ const PowerWashingProcess = () => {
   };
 
   return (
-    <section className="py-10 bg-background">
+    <section className="py-10 bg-background ">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-balance text-[#0094D9]">Our Power Washing Process</h2>
@@ -24,7 +24,7 @@ const PowerWashingProcess = () => {
         </div>
 
         {/* Process Steps Buttons */}
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto" id="process">
           <div className="flex flex-wrap  justify-center gap-4 mb-12">
             {steps.map((step) => (
               <button

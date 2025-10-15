@@ -1,11 +1,12 @@
 "use client";
 import React from "react";
-import { Phone } from "lucide-react";
+import { Hash, Phone } from "lucide-react";
+import { HashLink } from "react-router-hash-link";
 
 export default function GetAQuoteSection() {
   return (
     <section
-      id="get-quote"
+      id="getquote"
       className="py-20 lg:py-32 bg-[#0094D9] text-white relative overflow-hidden px-6 lg:px-12"
     >
       {/* Background Accent Circles */}
@@ -28,19 +29,23 @@ export default function GetAQuoteSection() {
         {/* Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           {/* Primary Button */}
-          <button
-            className="inline-flex items-center justify-center gap-2 bg-white text-[#0094D9] hover:bg-white/90 font-medium text-base px-8 h-12 rounded-md shadow-md transition-all duration-300"
-          >
-            <Phone className="w-5 h-5" />
-            Contact Us Today
-          </button>
+          <HashLink to="tel:(416) 471-4465">
+            <button
+              className="inline-flex items-center justify-center gap-2 bg-white text-[#0094D9] hover:bg-white/90 font-medium text-base px-8 h-12 rounded-md shadow-md transition-all duration-300"
+            >
+              <Phone className="w-5 h-5" />
+              Contact Us Today
+            </button>
+          </HashLink>
 
           {/* Secondary Button */}
-          <button
-            className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 font-medium text-base px-8 h-12 rounded-md transition-all duration-300"
-          >
-            Schedule Site Visit
-          </button>
+          <HashLink to="/#contact">
+            <button
+              className="inline-flex items-center justify-center gap-2 border-2 border-white text-white hover:bg-white/10 font-medium text-base px-8 h-12 rounded-md transition-all duration-300"
+            >
+              Schedule Site Visit
+            </button>
+          </HashLink>
         </div>
       </div>
     </section>
