@@ -7,17 +7,9 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showServices, setShowServices] = useState(false);
-  const [showImage, setShowImage] = useState(false); // New state for image visibility
-  const [isTextWhite, setIsTextWhite] = useState(false); // State for text color
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 50);
-      setIsTextWhite(scrollPosition > 50); // Change text color when scrolled
-      setShowImage(scrollPosition > 100); // Show image after scrolling more than 100px
-    };
-
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -32,7 +24,7 @@ export default function Navbar() {
         {/* Logo */}
         <a href="#home" className="flex items-center">
           <img
-           src={isScrolled ? "/logo.png" : "/footer 1.png"}  
+            src={isScrolled ? "/logo.png" : "/footer 1.png"}  // Conditionally change logo based on scroll position
             alt="ARCON Logo"
             className="h-10 w-auto object-contain"
           />
@@ -41,7 +33,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <nav
           className={`hidden lg:flex space-x-10 font-medium uppercase tracking-wider absolute left-1/2 transform -translate-x-1/2 transition-colors duration-300 ${
-            isTextWhite ? "text-black" : "text-white"
+            isScrolled ? "text-black" : "text-white" // Change text color based on scroll position
           }`}
         >
           <Link to="/#home" className="hover:text-[#0094D9] transition">
@@ -73,7 +65,48 @@ export default function Navbar() {
                 >
                   Food Plant Cleaning
                 </RouterLink>
-                {/* Other Service Links */}
+                <RouterLink
+                  to="/commercial-cleaning"
+                  className="block px-5 py-2 text-sm text-gray-700 hover:bg-[#0094D9]/10 hover:text-[#0094D9]"
+                  onClick={() => setShowServices(false)}
+                >
+                  Commercial Cleaning
+                </RouterLink>
+                <RouterLink
+                  to="/Restaurantcleaning"
+                  className="block px-5 py-2 text-sm text-gray-700 hover:bg-[#0094D9]/10 hover:text-[#0094D9]"
+                  onClick={() => setShowServices(false)}
+                >
+                  Restaurant Cleaning
+                </RouterLink>
+                <RouterLink
+                  to="/strip-and-wax"
+                  className="block px-5 py-2 text-sm text-gray-700 hover:bg-[#0094D9]/10 hover:text-[#0094D9]"
+                  onClick={() => setShowServices(false)}
+                >
+                  Strip & Wax
+                </RouterLink>
+                <RouterLink
+                  to="/power-washing"
+                  className="block px-5 py-2 text-sm text-gray-700 hover:bg-[#0094D9]/10 hover:text-[#0094D9]"
+                  onClick={() => setShowServices(false)}
+                >
+                  Power Washing
+                </RouterLink>
+                <RouterLink
+                  to="/Postconstructioncleaning"
+                  className="block px-5 py-2 text-sm text-gray-700 hover:bg-[#0094D9]/10 hover:text-[#0094D9]"
+                  onClick={() => setShowServices(false)}
+                >
+                  Post Construction Cleaning
+                </RouterLink>
+                <RouterLink
+                  to="/Deepsteamcleaning"
+                  className="block px-5 py-2 text-sm text-gray-700 hover:bg-[#0094D9]/10 hover:text-[#0094D9]"
+                  onClick={() => setShowServices(false)}
+                >
+                  Deep Steam Cleaning
+                </RouterLink>
               </div>
             )}
           </div>
@@ -115,7 +148,24 @@ export default function Navbar() {
             <RouterLink to="/Foodplante" onClick={() => setIsOpen(false)}>
               Food Plant Cleaning
             </RouterLink>
-            {/* Other Service Links */}
+            <RouterLink to="/commercial-cleaning" onClick={() => setIsOpen(false)}>
+              Commercial Cleaning
+            </RouterLink>
+            <RouterLink to="/Restaurantcleaning" onClick={() => setIsOpen(false)}>
+              Restaurant Cleaning
+            </RouterLink>
+            <RouterLink to="/strip-and-wax" onClick={() => setIsOpen(false)}>
+              Strip & Wax
+            </RouterLink>
+            <RouterLink to="/power-washing" onClick={() => setIsOpen(false)}>
+              Power Washing
+            </RouterLink>
+            <RouterLink to="/Postconstructioncleaning" onClick={() => setIsOpen(false)}>
+              Post Construction Cleaning
+            </RouterLink>
+            <RouterLink to="/Deepsteamcleaning" onClick={() => setIsOpen(false)}>
+              Deep Steam Cleaning
+            </RouterLink>
           </div>
         </details>
 
