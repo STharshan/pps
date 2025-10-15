@@ -1,6 +1,8 @@
+"use client";
 import React, { useEffect } from "react";
 import { CheckCircle } from "lucide-react";
-import AOS from "aos"; // Import AOS
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function WhyChooseUs() {
   const items = [
@@ -32,41 +34,54 @@ export default function WhyChooseUs() {
   ];
 
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true }); // Initialize AOS with duration and "once" trigger
+    AOS.init({ duration: 1000, once: true });
   }, []);
 
   return (
-    <section className="bg-white py-16 px-6 md:px-12 lg:px-20 font-poppins" id="whychooseus">
-      <div className="max-w-6xl mx-auto text-center mb-15 lg:flex grid lg:gap-15">
-        <h2 className="text-[#0094D9] font-bold text-lg tracking-widest uppercase mb-2" data-aos="fade-up">
+    <section
+      className="bg-white py-20 px-6 md:px-12 lg:px-20 font-poppins"
+      id="whychooseus"
+    >
+      {/* Section Header */}
+      <div className="max-w-5xl mx-auto text-center mb-12">
+        <h2
+          className="text-[#0094D9] font-bold text-lg tracking-widest uppercase mb-2"
+          data-aos="fade-up"
+        >
           • Why Choose Us
         </h2>
-        <p className="text-black font-semibold text-2xl max-w-2xl mx-auto text-left" data-aos="fade-up">
+        <p
+          className="text-gray-800 font-semibold text-2xl leading-relaxed"
+          data-aos="fade-up"
+        >
           We provide reliable cleaning, maintenance, and renovation services at
           competitive prices tailored to your budget. We deliver with
-          professional equipment, ensuring efficiency and high standards — 
-          always customized to your needs.
+          professional equipment, ensuring efficiency and high standards — always
+          customized to your needs.
         </p>
       </div>
 
       {/* Card Grid */}
       <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-8">
-        {items.map((item, index) => (
+        {items.map((item) => (
           <div
             key={item.id}
-            className="relative bg-white shadow-lg hover:shadow-[#0094D9] active:shadow-[#0094D9] rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-gray-100 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-sm flex flex-col"
-            data-aos="fade-up" // Add AOS animation to each card
+            className="relative bg-[#0094D9] text-white rounded-2xl p-8 shadow-md hover:shadow-2xl hover:scale-105 transition-all duration-500 w-full sm:w-[calc(50%-16px)] lg:w-[calc(33.333%-22px)] max-w-sm"
+            data-aos="fade-up"
           >
-            <div className="absolute -top-4 -left-4 bg-[#0094D9] text-white w-10 h-10 flex items-center justify-center rounded-full font-semibold">
+            {/* Number Circle */}
+            <div className="absolute -top-4 -left-4 bg-white text-[#0094D9] w-10 h-10 flex items-center justify-center rounded-full font-semibold shadow-md">
               {item.id}
             </div>
 
+            {/* Title */}
             <div className="flex items-center gap-3 mb-4">
-              <CheckCircle className="text-[#0094D9] w-6 h-6" />
-              <h4 className="text-xl font-semibold text-gray-800">{item.title}</h4>
+              <CheckCircle className="text-white w-6 h-6" />
+              <h4 className="text-xl font-semibold">{item.title}</h4>
             </div>
 
-            <p className="text-gray-600 leading-relaxed">{item.desc}</p>
+            {/* Description */}
+            <p className="text-white/90 leading-relaxed">{item.desc}</p>
           </div>
         ))}
       </div>
